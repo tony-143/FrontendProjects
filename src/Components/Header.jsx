@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
-        <div className=' bg-dark'>
+        <div className='px-2 bg-dark'>
             <div className='mx-xxl-5'>
-            <nav className='navbar  mx-auto bg-dark navbar-dark  navbar-expand-md  mx-auto w-100'>
+            <nav className='navbar  mx-auto bg-dark navbar-dark  navbar-expand-md  mx-auto '>
                 <Link className='Rlink' to="/"><div className='navbar-brand'>TonyMart</div></Link>
                 <form className='input-group d-flux w-md-50 w-50'>
                     <input type="text" placeholder='search items' className=' mx-auto form-control w-50 py-1 px-2 ' />
