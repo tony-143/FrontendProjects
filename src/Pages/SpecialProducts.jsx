@@ -2,6 +2,8 @@ import React from 'react'
 import ReactStars from "react-rating-stars-component";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { Link } from 'react-router-dom';
+import laptop from '../assets/images/laptop.jpg'
+import watch from '../assets/images/watch.jpg'
 const SpecialProducts = () => {
     let date = new Date()
     // let time = () => {
@@ -17,10 +19,10 @@ const SpecialProducts = () => {
         <div className='col-12 mb-4 col-md-6 col-lg-4' >
             <div style={{ borderRadius: '10px' }} className="p-3 specialProduct gap-4 rounded-5  bg-white justify-content-between d-flex shadow rouded-2">
                 <div className="imgs position-relative d-flex flex-column  align-center justify-content-center">
-                    <img src="src\images\laptop.jpg" className='img-fluid' alt="" />
+                    <img src={laptop} className='img-fluid' alt="" />
                     <div className="smallImgs d-flex w-50 justify-content-between">
-                        <img src="src\images\watch.jpg" alt="" className="img-fluid" />
-                        <img src="src\images\laptop.jpg" alt="" className="img-fluid" />
+                        <img src={watch} alt="" className="img-fluid" />
+                        <img src={laptop} alt="" className="img-fluid" />
                     </div>
                     <div className="links position-absolute end-0 top-0">
                         <i class="fa-regular fa-heart   fs-6"></i>
