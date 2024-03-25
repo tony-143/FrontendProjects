@@ -3,6 +3,7 @@ import BackToHome from './BackToHome'
 import { CirclePicker } from 'react-color'
 import ReactStars from "react-rating-stars-component";
 import { Cards } from './slider';
+import watch from '../assets/images/watch.jpg'
 
 const OurStore = () => {
   let [col,setCol]=useState(3)
@@ -57,7 +58,7 @@ const OurStore = () => {
             <div className="shadow p-3 py-4 filter-card mb-3 rounded-5">
               <h5>Random Product</h5>
               <div className="img  d-flex justify-content-between mt-3">
-                <img src="src\images\watch.jpg" className='img-fluid w-50 h-50' alt="" />
+                <img src={watch} className='img-fluid w-50 h-50' alt="" />
                 <div className="content d-flex flex-column justify-content-evenly align-items-between ">
                   <h5 className=''>Lorem  dolor sit amet. dolor, sit am...</h5>
                   <div className='rating'>
