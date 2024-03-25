@@ -29,15 +29,15 @@ const Slider = () => {
     return (
         <div className=''>
             <div className='d-flex justify-content-between'>
-                <h2>Features</h2>
+                <h2 className='h1 line w-100'>Features</h2>
             </div>
             <Carousel responsive={responsive}>
                 {products.map((p, i) => {
                     return (
                         <div key={i} className="feature-card mx-2 shadow h-100" style={{ background: 'white', userSelect: 'none', borderRadius: '20px', scale: '1' }}>
                             <div className='item  position-relative' >
-                                <div className='d-flex justify-content-center pt-2 pb-3'>
-                                    <img className='img-fluid  ' style={{ height: '150px' }} width={200} src={p.images[0]} alt="" />
+                                <div className='d-flex justify-content-center pt-2 pb-5'>
+                                    <img className='img-fluid  py-2 ' style={{ height: '200px' }} width={200} src={p.images[0]} alt="" />
                                 </div>
                                 <div className='px-3 '>
                                     <h5 className='text-danger text-uppercase'>{p.brand}</h5>
@@ -80,7 +80,7 @@ export function Cards({col}){
             
             {products.slice(0,items).map((p, i) => {
                     return (
-                        <div key={i} className={`feature-card col-lg-${col} col-sm-${col} col-12 mb-2 shadow`} style={{ background: 'white', userSelect: 'none', borderRadius: '20px', scale: '1' }}>
+                        <div key={i} className={`feature-card  col-lg-${col} col-sm-${col} col-12 mb-2 shadow`} style={{ background: 'white', userSelect: 'none', borderRadius: '20px', scale: '1' }}>
                             <div className='item  position-relative' >
                                 <div className='d-flex justify-content-center pt-2 pb-3'>
                                     <img className='img-fluid  ' style={{ height: '150px' }} width={200} src={p.images[0]} alt="" />

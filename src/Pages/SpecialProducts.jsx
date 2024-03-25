@@ -16,8 +16,8 @@ const SpecialProducts = () => {
     //     )
     // }
     return (
-        <div className='col-12 mb-4 col-md-6 col-lg-4' >
-            <div style={{ borderRadius: '10px' }} className="p-3 specialProduct gap-4 rounded-5  bg-white justify-content-between d-flex shadow rouded-2">
+        <div className='col-12 mb-4 col-md-6 col-lg-4 ' >
+            <div style={{ borderRadius: '10px' }} className="p-3 specialProduct gap-5 rounded-5  bg-white justify-content-between d-flex shadow rouded-2">
                 <div className="imgs position-relative d-flex flex-column  align-center justify-content-center">
                     <img src={laptop} className='img-fluid' alt="" />
                     <div className="smallImgs d-flex w-50 justify-content-between">
@@ -29,7 +29,7 @@ const SpecialProducts = () => {
                     </div>
                     
                 </div>
-                <div className="content">
+                <div className="content d-flex justify-content-around flex-column gap-2">
                     <h5 className='text-success fw-bold text-capitalize'>Brand</h5>
                     <h4 className='text-capitalize'>Product Name</h4>
                     <div className='rating'>
@@ -53,11 +53,11 @@ const SpecialProducts = () => {
                             <span className='p-2 rounded-circle bg-danger'>{date.getSeconds()}</span>
                         </span>
                     </div>
-                    <div className="progres mt-3">
+                    <div className="progres ">
                         <p className='text-muted'>Products: 200</p>
                         <ProgressBar completed={60} height='8px' isLabelVisible={false} />
                     </div>
-                    <Link id='btn' className='btn link px-3 my-2 shadow rounded-pill'>Option</Link>
+                    <Link id='btn' className='btn w-50 link px-3 my-2 shadow rounded-pill'>Option</Link>
                 </div>
             </div>
         </div>

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
-        <div className='mx-auto bg-dark'>
-            <div className='container-xxl'>
-            <nav className='navbar bg-dark navbar-dark  px-md-5 navbar-expand-md  ms-auto w-100'>
+        <div className=' bg-dark'>
+            <div className='mx-xxl-5'>
+            <nav className='navbar  mx-auto bg-dark navbar-dark  navbar-expand-md  mx-auto w-100'>
                 <Link className='Rlink' to="/"><div className='navbar-brand'>TonyMart</div></Link>
                 <form className='input-group d-flux w-md-50 w-50'>
                     <input type="text" placeholder='search items' className=' mx-auto form-control w-50 py-1 px-2 ' />
@@ -50,7 +50,7 @@ const Header = () => {
                     </ul>
                 </div>
             </nav>
-            <div className='px-md-5 bg-dark text-light row-1 p-2'>
+            <div className='px-md- bg-dark text-light row-1 py-2'>
                 <ul className='list-inline col-12 col-md-6' style={{ ...style, justifyContent: 'space-between' }}>
                     <li className='list-inline-item ' data-bs-toggle='dropdown' style={{ display: 'flex', alignItems: 'center' }}>
                         <span class="material-symbols-outlined">

@@ -55,3 +55,18 @@ li{
     color: aliceblue;
     background-color: rgba(0, 0, 0, 0.847);
 }
+.line::after{
+    content: "";
+    display: block;
+    width: 10%;
+    height: 5px;
+    background-color: blueviolet;
+    margin-bottom: 1%;
+    border-radius: 30%;
+}
+.tony{position: absolute;}
+@media screen and (max-width:756px) {
+    .tony{
+        position: relative;
+    }
+}

@@ -9,8 +9,8 @@ const OurStore = () => {
   return (
     <>
       <BackToHome title={'OurStore'} />
-      <div className="container-xxl">
-        <div className="row">
+      <div className="mx-xxl-5 ">
+        <div className="row ">
           <div className="col-md-3 col-12">
             <div className="shadow p-3 py-4 filter-card mb-3 rounded-5">
               <h5 className='text-capitalize'>shop by categories</h5>
@@ -76,7 +76,7 @@ const OurStore = () => {
             </div>
           </div>
           <div className="col-md-9 col-12">
-            <div className="d-flex border justify-content-between align-item-center p-2">
+            <div className="d-flex mb-3 border justify-content-between align-item-center p-2">
               <div className="d-flex align-items-center gap-1">
                 <p className='mb-0 w-50 d-block'>Sort by:</p>
                 <select className='form-select'>

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-
+import { Link } from 'react-router-dom'
 const SignUp = () => {
   let [text, setText] = useState("")
   let name = useRef(null)
@@ -58,7 +58,8 @@ const SignUp = () => {
   }
   return (
     <div className='container-xxl pt-5 mx-auto row mt-5'>
-      <div className="shadow mx-auto col-md-6 col-12 border mt-5 d-flex flex-column gap-4 p-4">
+      <div className="shadow mx-auto position-relative col-md-6 col-12 border mt-5 d-flex flex-column gap-4 p-4">
+      <Link to='/'> <div className="position-absolute top-0 end-0 p-2">❌</div></Link>
         <h1 className='mx-auto text-primary h2'>Sign up</h1>
         <div>
           <input id='name' type="text" ref={name} placeholder='name' className={`p-2 ${text} form-control`} />

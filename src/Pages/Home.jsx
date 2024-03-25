@@ -32,10 +32,10 @@ const Home = () => {
   return (
     <>
       <section className='home-wrapper-1'>
-        <div className='container-xxl py-5'>
+        <div className='mx-md-5 py-5'>
           <div className="row ">
 
-            <div className="col-md-6 col-12">
+            <div className="col-lg-6 col-12">
 
               <div className="img position-relative mb-3">
                 <img src={mainbanner}
@@ -51,15 +51,15 @@ const Home = () => {
               </div>
               
             </div>
-            <div className='col-md-6 col-12'>
-              <div className="row mb-3">
+            <div className='col-lg-6 col-12'>
+              <div className="row mb-xxl-5 mb-lg-4">
                 <div className="col-6 position-relative">
                   <img src={catbanner1}
                     className='img-fluid  rounded-2 ' alt="catbanner-01.jpg" />
 
-                  <div className="text catbanner-text position-absolute top-0 p-2 p-md-4 ">
+                  <div className="text catbanner-text  tony top-0 p-2 p-md-4 ">
                     <h5 className='text-uppercase  text-warning'>best sale</h5>
-                    <h1 className='h6'>Laptops Max.</h1>
+                    <h1 className='h4'>Laptops Max.</h1>
                     <p className='w-75 ' >From $1699.00 or &64.7/mo</p>
                   </div>
                 </div>
@@ -68,9 +68,9 @@ const Home = () => {
                   <img src={catbanner2}
                     className='img-fluid rounded-2 ' alt="catbanner-02.jpg" />
 
-                  <div className="text position-absolute p-2 p-md-4 top-0">
+                  <div className="text tony p-2 p-md-4 top-0">
                     <h5 className='text-uppercase  text-warning'>15% OFF</h5>
-                    <h1 className='h6'>Smartwatch 7</h1>
+                    <h1 className='h4'>Smartwatch 7</h1>
                     <p className='w-75 text-capitalize' >shop the latest brand styles and colors</p>
                   </div>
 
@@ -81,9 +81,9 @@ const Home = () => {
                   <img src={catbanner3}
                     className='img-fluid rounded-2 ' alt="catbanner-03.jpg" />
 
-                  <div className="text position-absolute p-2 p-md-4 top-0">
+                  <div className="text tony p-2 p-md-4 top-0">
                     <h5 className='text-uppercase  text-warning'>new arrival</h5>
-                    <h1 className='h6'>Buy iPad Air</h1>
+                    <h1 className='h4'>Buy iPad Air</h1>
                     <p className='w-75 ' >From $599.00 or &34.7/mo</p>
                   </div>
                 </div>
@@ -92,9 +92,9 @@ const Home = () => {
                   <img src={catbanner4}
                     className='img-fluid rounded-2 ' alt="catbanner-04.jpg" />
 
-                  <div className="text position-absolute p-2 p-md-4 top-0">
+                  <div className="text tony p-2 p-md-4 top-0">
                     <h5 className='text-uppercase  text-warning'>free engraving</h5>
-                    <h1 className='h6'>AirPods Max</h1>
+                    <h1 className='h4'>AirPods Max</h1>
                     <p className='w-75 text-capitalize' >high-fedility playback & ultra-low distrotion</p>
                   </div>
 
@@ -105,49 +105,49 @@ const Home = () => {
           </div>
         </div></section>
       <section style={{ background: ' rgb(238, 238, 238)' }} className='home-wrapper-2 p-3'>
-        <header className='container-xxl ' style={style}>
+        <header className='mx-md-5 my-5' style={style}>
           <div className="col-12">
             <div className="services  d-md-flex justify-content-between align-items-center">
               <div style={style} className=''>
-                <img src={service1} className='img-fluid pb-3 mx-3' alt="service.png" />
+                <img style={{height:'50px'}} src={service1}  className='img-fluid pb-3 mx-3' alt="service.png" />
                 <span className='w-100'>
-                  <h1 className='h6 text-capitalize'>free shipping</h1>
+                  <h1 className='h4 text-capitalize'>free shipping</h1>
                   <p className='text-capitalize '>for all orders over $100</p>
                 </span>
               </div>
               <div style={style} className=''>
-                <img src={service2} className='img-fluid pb-3  mx-3' alt="service.png" />
+                <img style={{height:'50px'}} src={service2} className='img-fluid pb-3  mx-3' alt="service.png" />
                 <span className='w-100'>
-                  <h1 className='h6  text-capitalize'>daily suprise offers</h1>
+                  <h1 className='h4  text-capitalize'>daily suprise offers</h1>
                   <p className='text-capitalize '>save upto 25% OFF</p>
                 </span>
               </div>
               <div style={style} className=''>
-                <img src={service3} className='img-fluid pb-3  mx-3' alt="service.png" />
+                <img style={{height:'50px'}} src={service3} className='img-fluid pb-3  mx-3' alt="service.png" />
                 <span className='w-100'>
-                  <h1 className='h6  text-capitalize'>Support 24/7</h1>
+                  <h1 className='h4  text-capitalize'>Support 24/7</h1>
                   <p className='text-capitalize '>shop with an expert</p>
                 </span>
               </div>
               <div style={style} className=''>
-                <img src={service4} className='img-fluid pb-3  mx-3' alt="service.png" />
+                <img style={{height:'50px'}} src={service4} className='img-fluid pb-3  mx-3' alt="service.png" />
                 <span className='w-100'>
-                  <h1 className='h6  text-capitalize'>affordable prices</h1>
+                  <h1 className='h4  text-capitalize'>affordable prices</h1>
                   <p className='text-capitalize '>get factory direct price</p>
                 </span>
               </div>
               <div style={style} className=''>
-                <img src={service5} className='img-fluid pb-3 mx-3' alt="service.png" />
+                <img style={{height:'50px'}} src={service5} className='img-fluid pb-3 mx-3' alt="service.png" />
                 <span className='w-100'>
-                  <h1 className='h6  text-capitalize'>secure payments</h1>
+                  <h1 className='h4  text-capitalize'>secure payments</h1>
                   <p className='text-capitalize '>100% protected payments</p>
                 </span>
               </div>
             </div>
           </div>
         </header>
-        <div style={{ background: "white" }} className="rounded-3 container-xxl my-3 p-3 shadow">
-          <div className="mx-auto row">
+        <div style={{ background: "white" }} className="rounded-3 mx-md-5 my-5 p-3 shadow">
+          <div className="mx-auto  row">
             <div className="col-12 text-center ps-5">
               <div className='catogories text-center  d-md-flex align-items-center justify-content-around'>
                 <div className="d-flex d-md-block  gap-5 align-items-center w-100">
@@ -171,11 +171,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='container-xxl mb-5 features'>
+        <div className='mx-md-5 py-5 mb-5 features'>
           <Slider></Slider>
         </div>
-        <section className='news'>
-          <div className="container-xxl">
+        <section className='news '>
+          <div className="mx-md-5 pt-4">
             <div className="row my-5">
               <div className="col-lg-3 col-md-6 col-sm-6 col-12 mb-3 " >
                 <div className=" pt-3 h-100 ps-3  text-light" style={{background:'black',borderRadius:"10px"}}>
@@ -214,9 +214,9 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className='speacial-products'>
-          <div className="container-xxl">
-            <h4>Special Products</h4>
+        <section className='speacial-products my-5'>
+          <div className="mx-md-5 px-md-4 my-5 py-5">
+            <h4 className='h1 line'>Special Products</h4>
             <div className="row ">
               <SpecialProducts/>
               <SpecialProducts/>
@@ -228,7 +228,7 @@ const Home = () => {
           </div>
         </section>
         <section className='marquee my-4'>
-          <div className="container-xxl shadow rounded-2">
+          <div className="mx-md-5 shadow rounded-2">
             <div className="row bg-white">
               <Marquee>
                 <div className="col-12 d-flex justify-content-around px-2">
@@ -249,9 +249,9 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className='bolg'>
-          <div className="container-xxl my-4">
-            <h2 className='text-capitalize'>Our latest news</h2>
+        <section className='bolg my-5'>
+          <div className="mx-md-5 my-4">
+            <h2 className='text-capitalize h1'>Our latest news</h2>
             <div className="row">
               <div className="col-12 justify-content-between gap-3 d-md-flex">
                 <Blogs imgSrc={blog1}/>
