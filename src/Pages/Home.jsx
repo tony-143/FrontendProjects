@@ -3,6 +3,30 @@ import Slider from './slider'
 import Marquee from "react-fast-marquee";
 import Blogs from './Blogs'
 import SpecialProducts from './SpecialProducts';
+import catbanner1 from '../assets/images/catbanner-01.jpg'
+import catbanner2 from '../assets/images/catbanner-02.jpg'
+import catbanner3 from '../assets/images/catbanner-03.jpg'
+import catbanner4 from '../assets/images/catbanner-04.jpg'
+import mainbanner from '../assets/images/main-banner-1.jpg'
+import service1 from '../assets/images/service.png'
+import service2 from '../assets/images/service-02.png'
+import service3 from '../assets/images/service-03.png'
+import service4 from '../assets/images/service-04.png'
+import service5 from '../assets/images/service-05.png'
+import laptop from '../assets/images/laptop.jpg'
+import watch from '../assets/images/watch.jpg'
+import speaker from '../assets/images/speaker.jpg'
+import tv from '../assets/images/tv.jpg'
+import headphone from '../assets/images/headphone.jpg'
+import brand1 from '../assets/images/brand-01.png'
+import brand2 from '../assets/images/brand-02.png'
+import brand3 from '../assets/images/brand-03.png'
+import brand4 from '../assets/images/brand-04.png'
+import brand5 from '../assets/images/brand-05.png'
+import blog1 from '../assets/images/blog-1.jpg'
+
+
+
 const Home = () => {
 
   return (
@@ -14,7 +38,7 @@ const Home = () => {
             <div className="col-md-6 col-12">
 
               <div className="img position-relative mb-3">
-                <img src="src\images\main-banner-1.jpg"
+                <img src={mainbanner}
                   className='img-fluid rounded-2 w-100' alt="main-banner-1" />
 
                 <div className="text position-absolute p-1 p-md-5 top-0">
@@ -30,7 +54,7 @@ const Home = () => {
             <div className='col-md-6 col-12'>
               <div className="row mb-3">
                 <div className="col-6 position-relative">
-                  <img src="src\images\catbanner-01.jpg"
+                  <img src={catbanner1}
                     className='img-fluid  rounded-2 ' alt="catbanner-01.jpg" />
 
                   <div className="text catbanner-text position-absolute top-0 p-2 p-md-4 ">
@@ -41,7 +65,7 @@ const Home = () => {
                 </div>
 
                 <div className="col-6 position-relative">
-                  <img src="src\images\catbanner-02.jpg"
+                  <img src={catbanner2}
                     className='img-fluid rounded-2 ' alt="catbanner-02.jpg" />
 
                   <div className="text position-absolute p-2 p-md-4 top-0">
@@ -54,7 +78,7 @@ const Home = () => {
               </div>
               <div className="row ">
                 <div className="col-6 position-relative">
-                  <img src="src\images\catbanner-03.jpg"
+                  <img src={catbanner3}
                     className='img-fluid rounded-2 ' alt="catbanner-03.jpg" />
 
                   <div className="text position-absolute p-2 p-md-4 top-0">
@@ -65,7 +89,7 @@ const Home = () => {
                 </div>
 
                 <div className="col-6 position-relative">
-                  <img src="src\images\catbanner-04.jpg"
+                  <img src={catbanner4}
                     className='img-fluid rounded-2 ' alt="catbanner-04.jpg" />
 
                   <div className="text position-absolute p-2 p-md-4 top-0">
@@ -85,35 +109,35 @@ const Home = () => {
           <div className="col-12">
             <div className="services  d-md-flex justify-content-between align-items-center">
               <div style={style} className=''>
-                <img src="src\images\service.png" className='img-fluid pb-3 mx-3' alt="service.png" />
+                <img src={service1} className='img-fluid pb-3 mx-3' alt="service.png" />
                 <span className='w-100'>
                   <h1 className='h6 text-capitalize'>free shipping</h1>
                   <p className='text-capitalize '>for all orders over $100</p>
                 </span>
               </div>
               <div style={style} className=''>
-                <img src="src\images\service-02.png" className='img-fluid pb-3  mx-3' alt="service.png" />
+                <img src={service2} className='img-fluid pb-3  mx-3' alt="service.png" />
                 <span className='w-100'>
                   <h1 className='h6  text-capitalize'>daily suprise offers</h1>
                   <p className='text-capitalize '>save upto 25% OFF</p>
                 </span>
               </div>
               <div style={style} className=''>
-                <img src="src\images\service-03.png" className='img-fluid pb-3  mx-3' alt="service.png" />
+                <img src={service3} className='img-fluid pb-3  mx-3' alt="service.png" />
                 <span className='w-100'>
                   <h1 className='h6  text-capitalize'>Support 24/7</h1>
                   <p className='text-capitalize '>shop with an expert</p>
                 </span>
               </div>
               <div style={style} className=''>
-                <img src="src\images\service-04.png" className='img-fluid pb-3  mx-3' alt="service.png" />
+                <img src={service4} className='img-fluid pb-3  mx-3' alt="service.png" />
                 <span className='w-100'>
                   <h1 className='h6  text-capitalize'>affordable prices</h1>
                   <p className='text-capitalize '>get factory direct price</p>
                 </span>
               </div>
               <div style={style} className=''>
-                <img src="src\images\service-05.png" className='img-fluid pb-3 mx-3' alt="service.png" />
+                <img src={service5} className='img-fluid pb-3 mx-3' alt="service.png" />
                 <span className='w-100'>
                   <h1 className='h6  text-capitalize'>secure payments</h1>
                   <p className='text-capitalize '>100% protected payments</p>
@@ -127,21 +151,21 @@ const Home = () => {
             <div className="col-12 text-center ps-5">
               <div className='catogories text-center  d-md-flex align-items-center justify-content-around'>
                 <div className="d-flex d-md-block  gap-5 align-items-center w-100">
-                  <img className='img-fluid ' height={200} width={100} src="src\images\laptop.jpg" alt="" />
+                  <img className='img-fluid ' height={200} width={100} src={laptop} alt="" />
                   <p className='text-capitalize '>computers & laptops</p>
                 </div>
                 <div className="d-flex d-md-block gap-5 align-items-center w-100">
-                  <img className='img-fluid ' height={200} width={100} src="src\images\watch.jpg" alt="" />
+                  <img className='img-fluid ' height={200} width={100} src={watch} alt="" />
                   <p className='text-capitalize '>Watches</p>
                 </div>
                 <div className="d-flex d-md-block gap-5 align-items-center w-100">
-                  <img className='img-fluid ' height={200} width={100} src="src\images\speaker.jpg" alt="" />
+                  <img className='img-fluid ' height={200} width={100} src={speaker} alt="" />
                   <p className='text-capitalize '>Blutooth Speakers</p>
                 </div><div className="d-flex d-md-block gap-5 align-items-center w-100">
-                  <img className='img-fluid ' height={200} width={100} src="src\images\tv.jpg" alt="" />
+                  <img className='img-fluid ' height={200} width={100} src={tv} alt="" />
                   <p className='text-capitalize '>Home Applians</p>
                 </div><div className="d-flex d-md-block gap-5 align-items-center w-100">
-                  <img className='img-fluid ' height={200} width={100} src="src\images\headphone.jpg" alt="" />
+                  <img className='img-fluid ' height={200} width={100} src={headphone} alt="" />
                   <p className='text-capitalize '>HeadPhones </p>
                 </div></div>
             </div>
@@ -209,15 +233,15 @@ const Home = () => {
               <Marquee>
                 <div className="col-12 d-flex justify-content-around px-2">
                  
-                    <img className='img-fluid mx-5' src="src/images/brand-01.png" alt="" />
+                    <img className='img-fluid mx-5' src={brand1} alt="" />
                 
-                    <img className='img-fluid mx-5' src="src/images/brand-02.png" alt="" />
+                    <img className='img-fluid mx-5' src={brand2} alt="" />
                  
-                    <img className='img-fluid mx-5' src="src/images/brand-03.png" alt="" />
+                    <img className='img-fluid mx-5' src={brand3} alt="" />
                   
-                    <img className='img-fluid mx-5' src="src/images/brand-04.png" alt="" />
+                    <img className='img-fluid mx-5' src={brand4} alt="" />
                 
-                    <img className='img-fluid mx-5' src="src/images/brand-05.png" alt="" />
+                    <img className='img-fluid mx-5' src={brand5} alt="" />
 
                 </div>
               </Marquee>
@@ -230,7 +254,7 @@ const Home = () => {
             <h2 className='text-capitalize'>Our latest news</h2>
             <div className="row">
               <div className="col-12 justify-content-between gap-3 d-md-flex">
-                <Blogs imgSrc={"src/images/blog-1.jpg"}/>
+                <Blogs imgSrc={blog1}/>
                 <Blogs imgSrc={"https://www.etq.com/app/uploads/2020/07/etq-product-launch-whiteboard-notes.jpg"}/>
                 <Blogs imgSrc={"https://imageio.forbes.com/specials-images/imageserve/6350000b820a60464ab5c039/Concept-of-augmented-reality-technology-in-glasses/0x0.jpg?format=jpg&crop=1353,761,x0,y55,safe&width=960"}/>
                 <Blogs imgSrc={"https://qph.cf2.quoracdn.net/main-qimg-c35574e4df73905d6eebafa94da2f975-lq"}/>
