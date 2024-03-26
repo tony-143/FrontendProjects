@@ -1,4 +1,9 @@
 @import "react-slideshow-image/dist/styles.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 li:hover {
     color: orange;
     cursor: pointer;

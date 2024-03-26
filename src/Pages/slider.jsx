@@ -120,13 +120,13 @@ export function Cards({col}){
                     )
                 })}
 
-                <div className='d-flex justify-content-center my-4'>
+                <div className='d-flex  justify-content-center my-4'>
                     <span onClick={()=>page>1?setPage(page-1):setPage(page)}
                     className={`p-2 rounded ${page>1?"":"d-none"} border px-3`} >◀️</span>
                     {
                         [...Array(Math.floor(products.length / 8))].map((_,i)=>{
                             return <span  onClick={()=>changePage(i+1)}
-                             className={`p-2 rounded ${page===i+1?"bg-dark text-light":""} border px-3`} key={i}>{i+1}</span>
+                             className={`p-2 rounded ${page===i+1?"bg-dark text-light":""} border px-sm-3`} key={i}>{i+1}</span>
                         })
                     }
                     <span onClick={()=>page<Math.floor(products.length / 8)?setPage(page+1):setPage(page)} 
