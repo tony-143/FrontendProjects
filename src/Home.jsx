@@ -44,7 +44,7 @@ export const Home = () => {
                 <Navbar />
                 {/* imge */}
 
-                <div style={{ zIndex: -1 }} style={{ height: "47rem" }} className="w-100 overflow-hidden position-absolute overflow-hidden position-relative mt-2">
+                <div style={{ height: "47rem",zIndex:-1 }} className="w-100 overflow-hidden position-absolute overflow-hidden position-relative mt-2">
                     <div style={{ zIndex: -1 }}>
                         <img src={url} style={{ objectFit: 'cover', width: '100%', height: '45rem', zIndex: '-1' }} className="image"></img>
                     </div>
