@@ -44,8 +44,8 @@ export const Home = () => {
             <div className="position-relative">
                 <Navbar />
                 {/* imge */}
-
-                <div style={{ zIndex: -1 }} style={{ height: "47rem" }} className="w-100 overflow-hidden position-absolute overflow-hidden position-relative mt-2">
+                {/* <div className="" style={{ height: "30rem" }}></div> */}
+                <div style={{ height: "47rem",top:'20rem',zIndex:-1 }} className="w-100 overflow-hidden position-absolute overflow-hidden mt-2">
                     <div style={{ zIndex: -1 }}>
                         <img src={url} style={{ objectFit: 'cover', width: '100%', height: '45rem', zIndex: '-1' }} className="image"></img>
                     </div>
@@ -54,7 +54,7 @@ export const Home = () => {
                         <h1 style={{ fontSize: '50px' }}>Chaitanya Bharathi Institute of Technology</h1>
                     </div>
                 </div>
-                <div className="" style={{ height: "48rem" }}></div>
+                <div className="" style={{ height: "50rem" }}></div>
             </div>
 
             {/* Marquee tag  */}
