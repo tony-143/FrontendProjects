@@ -44,8 +44,8 @@ export const Home = () => {
             <div className="position-relative">
                 <Navbar />
                 {/* imge */}
-                {/* <div className="" style={{ height: "30rem" }}></div> */}
-                <div style={{ height: "47rem",top:'20rem',zIndex:-1 }} className="w-100 overflow-hidden position-absolute overflow-hidden mt-2">
+
+                <div style={{ zIndex: -1 }} style={{ height: "47rem" }} className="w-100 overflow-hidden position-absolute overflow-hidden position-relative mt-2">
                     <div style={{ zIndex: -1 }}>
                         <img src={url} style={{ objectFit: 'cover', width: '100%', height: '45rem', zIndex: '-1' }} className="image"></img>
                     </div>
@@ -291,15 +291,18 @@ export const Home = () => {
             <div className="background-my-sectio">
             <div
                     className="pt-5"
-                    // style={{
-                    //     backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2022/03/day-care-hero-blobs-background.svg")`,
-                    //     backgroundRepeat: 'no-repeat',
-                    //     backgroundSize: '50%',
-                    //     backgroundPosition: 'right',
-                    //     // width: '100vw',  // full width of the viewport
-                    //     height: '85vh', // full height of the viewport
-                    // }}
+                    style={{
+                        backgroundImage: `url(${saikiran2})`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: '100%',
+                        // backgroundPosition: 'right',
+                        // width: '100vw',  // full width of the viewport
+                        height: '85vh', // full height of the viewport
+                    }}
                 >                
+
+        <h1 style={{ fontSize: '50px', color: '#203764' }} className="fw-bold pb-5 text-center">Developers Community </h1>
+
 
              <div className="p-5 pb-0 container-md">
                     <div className="row p-4">
