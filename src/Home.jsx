@@ -51,9 +51,9 @@ export const Home = () => {
                     <button style={{ backgroundColor: '#1E73BE', color: 'white', border: 'none', width: 'auto', textWrap: 'nowrap', fontSize: '14px' }}>Latest Updates</button>
                     <marquee behavior="" direction="" >
                         <div className="d-flex gap-5">
-                            <a style={{ color: 'blue', fontSize: '14px' }}>FIRST YEAR STUDENT INDUCTION PROGRAMME – 2024</a>
-                            <a style={{ color: 'blue', fontSize: '14px' }}> Excellent Placements in CBIT – 2024 [Accenture-24 & TCS-01 (9Lac Package)</a>
-                            <a style={{ color: 'blue', fontSize: '14px' }}>Eligibility Criteria for Admission to B.Tech Courses,—B.Tech 1-2 sem & MBA 1-2 sem Result coming soon..</a>
+                            <a style={{ color: 'blue', fontSize: '14px' }} href="https://cbit.edu.in/first-year-student-induction-programme-2023/">FIRST YEAR STUDENT INDUCTION PROGRAMME – 2024</a>
+                            <a style={{ color: 'blue', fontSize: '14px' }} href="https://cbit.edu.in/engineers-day-celebration-event/"> Excellent Placements in CBIT – 2024 [Accenture-24 & TCS-01 (9Lac Package)</a>
+                            <a style={{ color: 'blue', fontSize: '14px' }} href="https://cbit.edu.in/eligibility-criteria-for-admission-to-b-tech-courses/">Eligibility Criteria for Admission to B.Tech Courses,—B.Tech 1-2 sem & MBA 1-2 sem Result coming soon..</a>
                         </div>
                     </marquee>
                 </div>
@@ -124,12 +124,14 @@ export const Home = () => {
                             <marquee direction="up" scrollamount="100" scrolldelay="2000">
                                 <a style={{ textDecoration: 'underline' }} className="text-primary fw-semibold">ALUMNI-MEET-2024</a>
                                 <p>ALUMNI-MEET-2024</p>
-                                <a style={{ textDecoration: 'underline' }} className="text-primary fw-semibold">ALUMNI-MEET-2024</a>
-                                <p>ALUMNI-MEET-2024</p>
-                                <a style={{ textDecoration: 'underline' }} className="text-primary fw-semibold">ALUMNI-MEET-2024</a>
-                                <p>ALUMNI-MEET-2024</p>
-                                <a style={{ textDecoration: 'underline' }} className="text-primary fw-semibold">ALUMNI-MEET-2024</a>
-                                <p>ALUMNI-MEET-2024</p>
+                                <a style={{ textDecoration: 'underline' }} className="text-primary fw-semibold">2024 Placements - 21 Students selected in Accenture with 4.5 LPA</a>
+                                <p>Excellent campus wonderful placements</p>
+                                <a style={{ textDecoration: 'underline' }} className="text-primary fw-semibold">Workshop on Strategic Communication and Soft Skills Development" - 25-05-2024.
+                                </a>
+                                <p>25-05-2024</p>
+                                <a style={{ textDecoration: 'underline' }} className="text-primary fw-semibold">Excellent Campus, Wonderful Placements
+                                </a>
+                                <p>Congratulations on getting placed in to TCS</p>
                                 <a style={{ textDecoration: 'underline' }} className="text-primary fw-semibold">ALUMNI-MEET-2024</a>
                                 <p>ALUMNI-MEET-2024</p>
                             </marquee>
@@ -347,9 +349,49 @@ export const Home = () => {
                                                     <li>Mechanical Engineering</li>
                                                     <li>Civil Engineering</li>
                                                 </ul>
+                                                
                                             </div> : null
                                         }
                                     </div>
+
+                                    <div className="" style={{ borderColor: "#5C8345", borderStyle: 'solid', borderWidth: "2px" }}>
+                                        <div onClick={() => setShowList(!showList)} style={{ background: '#5C8345' }} className="d-flex align-items-center cursor text-light fs-6 fw-semibold p-4 py-3 gap-2">
+                                            {showList ? <i className="fa-solid fa-minus"></i> : <i className="fa-solid fa-plus"></i>} PG Courses
+                                        </div>
+                                        {
+                                            showList ? <div className="p-4 animated-list" style={{ fontSize: '14px' }}>
+                                                <ul style={{ listStyleType: 'disc', listStyle: "disc" }}>
+                                                    <li>
+                                                        {/* <i class="fa-solid fa-circle-dot"></i>  */}
+                                                        MBA – Master of Business Administration</li>
+                                                    
+                                                </ul>
+                                                
+                                            </div> : null
+                                        }
+                                    </div>
+
+                                    <div className="" style={{ borderColor: "#5C8345", borderStyle: 'solid', borderWidth: "2px" }}>
+                                        <div onClick={() => setShowList(!showList)} style={{ background: '#5C8345' }} className="d-flex align-items-center cursor text-light fs-6 fw-semibold p-4 py-3 gap-2">
+                                            {showList ? <i className="fa-solid fa-minus"></i> : <i className="fa-solid fa-plus"></i>} Diploma Courses
+                                        </div>
+                                        {
+                                            showList ? <div className="p-4 animated-list" style={{ fontSize: '14px' }}>
+                                                <ul style={{ listStyleType: 'disc', listStyle: "disc" }}>
+                                                    <li>
+                                                        {/* <i class="fa-solid fa-circle-dot"></i>  */}
+                                                        DCE</li>
+                                                    <li>DECE</li>
+                                                    <li>DEEE</li>
+                                                    <li>DCME</li>
+                                                    
+                                                </ul>
+                                                
+                                            </div> : null
+                                        }
+                                    </div>
+                                    
+                                    
 
                                 </div>
                                 <div>
@@ -369,14 +411,16 @@ export const Home = () => {
                             <div className="d-flex flex-column gap-3">
                                 <h1 style={{ fontSize: "55px" }} className="fw-bold ms-4">Departments</h1>
                                 <ul className="text-center d-flex flex-column gap-3">
-                                    <li style={{ background: "#9C977C" }} className="rounded-pill department-animi cursor p-3 fw-semibold py-2" >Civil Engineering</li>
-                                    <li>Civil Engineering</li>
-                                    <li>Civil Engineering</li>
-                                    <li>Civil Engineering</li>
-                                    <li>Civil Engineering</li>
-                                    <li>Civil Engineering</li>
-                                    <li>Civil Engineering</li>
-                                    <li>Civil Engineering</li>
+                                <li style={{ background: "#9C977C" }} className="rounded-pill department-animi cursor p-3 fw-semibold py-2" >Civil Engineering</li>
+                                <li style={{ background: "#82A578" }} className="rounded-pill department-animi cursor p-3 fw-semibold py-2" >Electrical and Electronics Engineering</li>
+                                <li style={{ background: "#438684" }} className="rounded-pill department-animi cursor p-3 fw-semibold py-2" >Mechanical Engineering</li>
+                                <li style={{ background: "#D87E57" }} className="rounded-pill department-animi cursor p-3 fw-semibold py-2" >Electronics and Communication Engineering</li>
+                                <li style={{ background: "#D35C5C" }} className="rounded-pill department-animi cursor p-3 fw-semibold py-2" >Computer Science and Engineering</li>
+                                <li style={{ background: "#4D5AB3" }} className="rounded-pill department-animi cursor p-3 fw-semibold py-2" >Humanities & Sciences</li>
+                                <li style={{ background: "#0359BC" }} className="rounded-pill department-animi cursor p-3 fw-semibold py-2" >Master of Business Administrationg</li>
+                                <li style={{ background: "#4B4F58" }} className="rounded-pill department-animi cursor p-3 fw-semibold py-2" >Diploma Courses</li>
+
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -407,42 +451,42 @@ export const Home = () => {
                         <div className="col-md-4 d-flex flex-column text-center">
                             <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
                             <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
-                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                            <hr style={{ color: "#0E4DD1", borderWidth: "2px" }} className="mt-4" />
                         </div>
                         <div className="col-md-4 d-flex flex-column text-center">
-                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
-                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
-                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                            <h4 style={{ color: "#691FA5" }} className="fw-bold my-3">Library</h4>
+                            <p>The CBIT Library is considered one of the most resourceful centres in twin cities since it caters to the current educational need on a wide scale.</p>
+                            <hr style={{ color: "#691FA5", borderWidth: "2px" }} className="mt-4" />
                         </div>
                         <div className="col-md-4 d-flex flex-column text-center">
-                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
-                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
-                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                            <h4 style={{ color: "#8FA503" }} className="fw-bold my-3">Cafeteria</h4>
+                            <p>The institute has an ideal cafeteria that takes utmost care in providing hygienic and wholesome food at subsidized rates.</p>
+                            <hr style={{ color: "#8FA503", borderWidth: "2px" }} className="mt-4" />
                         </div>
                         <div className="col-md-4 d-flex flex-column text-center">
-                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
-                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
-                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                            <h4 style={{ color: "#FF5858" }} className="fw-bold my-3">Computer Center</h4>
+                            <p>Our students have unrestricted, round-the-clock access to air-conditioned computer laboratories equipped with structured fibre...</p>
+                            <hr style={{ color: "#FF5858", borderWidth: "2px" }} className="mt-4" />
                         </div>
                         <div className="col-md-4 d-flex flex-column text-center">
-                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
-                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
-                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                            <h4 style={{ color: "#BB7800" }} className="fw-bold my-3">Auditorium</h4>
+                            <p>CBIT has a well-structured auditorium built in 3000 square feet with latest provisions. Fully air-conditioned with a seating capacity of 500..</p>
+                            <hr style={{ color: "#BB7800", borderWidth: "2px" }} className="mt-4" />
                         </div>
                         <div className="col-md-4 d-flex flex-column text-center">
-                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
-                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
-                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                            <h4 style={{ color: "#C706C3" }} className="fw-bold my-3">Health Services</h4>
+                            <p>The CBIT Health Centre provides healthcare facilities to the students whenever required. Registered Doctors are called in case of emergency...</p>
+                            <hr style={{ color: "#C706C3", borderWidth: "2px" }} className="mt-4" />
                         </div>
                         <div className="col-md-4 d-flex flex-column text-center">
-                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
-                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
-                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                            <h4 style={{ color: "#489739" }} className="fw-bold my-3">Laboratories</h4>
+                            <p>The College provides a well equipped Computer and Statistics laboratory for students to carry out their innovative and scientific experiments.</p>
+                            <hr style={{ color: "#489739", borderWidth: "2px" }} className="mt-4" />
                         </div>
                         <div className="col-md-4 d-flex flex-column text-center">
-                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
-                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
-                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                            <h4 style={{ color: "#3CB184" }} className="fw-bold my-3">Sports & Gymnasium</h4>
+                            <p>Physical fitness plays an important role in developing the overall personality of a student since a physically balanced student is mentally balanced too.</p>
+                            <hr style={{ color: "#3CB184", borderWidth: "2px" }} className="mt-4" />
                         </div>
 
 
@@ -460,49 +504,46 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-
             <div className="text-light p-4" style={{ background: "#E7E7E7" }}>
-
                 <div className="container-md w-100 p-5">
                     <h1 style={{ color: "#203764", fontSize: "50px" }} className=" fw-bold text-center">Honours & Achievements</h1>
-
                     <div className="d-flex flex-wrap p-5 pt-3">
 
                         <div className="m-2">
                             <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
                         </div>
                         <div className="m-2">
-                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/14-300x300.jpg" alt="" />
                         </div>
                         <div className="m-2">
-                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/13-300x300.jpg" alt="" />
                         </div>
                         <div className="m-2">
-                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/12-300x300.jpg" alt="" />
                         </div>
                         <div className="m-2">
-                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/11-300x300.jpg" alt="" />
                         </div>
                         <div className="m-2">
-                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/10-300x300.jpg" alt="" />
                         </div>
                         <div className="m-2">
-                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/9-300x300.jpg" alt="" />
                         </div>
                         <div className="m-2">
-                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/8-300x300.jpg" alt="" />
                         </div>
                         <div className="m-2">
-                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/7-300x300.jpg" alt="" />
                         </div>
                         <div className="m-2">
-                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/6-300x300.jpg" alt="" />
                         </div>
                         <div className="m-2">
-                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/5-300x300.jpg" alt="" />
                         </div>
                         <div className="m-2">
-                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/4-300x300.jpg" alt="" />
                         </div>
 
                     </div>
@@ -510,10 +551,9 @@ export const Home = () => {
                     <div className="w-100 text-center">
                         <button className="btn hover-white mx-auto py-1 fs-5 fw-semibold rounded-pill btn-primary">View More</button>
                     </div>
-
                 </div>
-
             </div>
+
 
             {/* placements  */}
             <div className="text-light p-4" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2022/03/day-care-blobs-1.svg")`, backgroundRepeat: 'repeat' }}>
