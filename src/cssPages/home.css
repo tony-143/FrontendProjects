@@ -1,0 +1,76 @@
+.coursesOfferd :hover{
+background: #89B322;
+}
+
+.ourCampus :hover{
+background-color: #6BC5B1;
+}
+.awards :hover{
+background-color: #AA96E9;
+}
+.infrastructure :hover{
+background-color: #FFA92C;
+}
+.placements :hover{
+background-color: #A23831;
+}
+.alumni :hover{
+background-color: #9B54D0;
+}
+.f-14{
+    font-size: 18px;
+}
+.btn-hover:hover{
+    background-color: #4B4F58;
+    cursor: pointer;
+}
+.hover-black:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.cursor{
+    cursor: pointer;
+}
+
+.animated-list {
+    animation: slide 1s ease-in; /* Animation for sliding */
+}
+
+.hover-white:hover{
+    background-color: white;
+}
+
+/* Keyframes for slide animation */
+@keyframes slide {
+    0% {
+        transform: translateY(-20px); /* Start slightly above */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: translateY(0); /* End at normal position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.department-animi {
+    animation: none; /* Initially, no animation */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for when animation starts */
+}
+
+.department-animi:hover {
+    animation: department-animi 1s ease-in-out infinite; /* Start animation on hover */
+}
+
+/* Keyframes for moving up and down */
+@keyframes department-animi {
+    0% {
+        transform: translateY(0); /* Initial position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up by 10px */
+    }
+    100% {
+        transform: translateY(0); /* Move back to original position */
+    }
+}

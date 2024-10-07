@@ -1,0 +1,623 @@
+import { useEffect, useState } from "preact/hooks"
+import Navbar from "./navbar"
+import './cssPages/home.css'
+import vision from '../public/images/vision.png'
+import tony from '../public/images/tony.jpg'
+import saikiran from '../public/images/saikiran.jpg'
+import saikiran2 from '../public/images/saikiran2.jpg'
+import moma from '../public/images/moma.jpg'
+
+export const Home = () => {
+    const [showList, setShowList] = useState(false)
+    const [url, setUrls] = useState("https://cbit.edu.in/wp-content/uploads/2023/06/cbit-1.jpg")
+    const images = ["https://cbit.edu.in/wp-content/uploads/2023/06/cbit-1.jpg", "https://cbit.edu.in/wp-content/uploads/2023/06/CBIT-Ground.jpg", "https://cbit.edu.in/wp-content/uploads/2023/06/CBIT-slide.jpg"]
+    let count = 1
+
+    useEffect(() => {
+        setInterval(() => {
+            setUrls(images[count]);
+            count += 1
+
+            if (count > 2) {
+                count = 0;
+            }
+        }, 5000);
+
+    }, [count])
+
+
+    return (
+        <div className="" style={{ overflowX: "hidden" }}>
+
+            <div className="position-relative">
+                <Navbar />
+                {/* imge */}
+
+                <div style={{zIndex:-1}} className="w-100 position-absolute overflow-hidden position-relative mt-2">
+                    <div style={{ zIndex: -1 }}>
+                        <img src={url} style={{ objectFit: 'cover', width: '100%', height: '32rem', zIndex: '-1' }} className="image"></img>
+                    </div>
+                    <div className="position-absolute top-50 text-light text-center w-100">
+                        <h1>Your Future Secure With Us</h1>
+                        <h1 style={{ fontSize: '50px' }}>Chaitanya Bharathi Institute of Technology</h1>
+                    </div>
+                </div>
+                <div className="" style={{height:"33rem"}}></div>
+            </div>
+
+            {/* Marquee tag  */}
+            <div className="py-2 px-5" style={{ backgroundColor: '#F3F5F5' }}>
+                <div style={{ fontSize: '14px' }} className="container px-5 d-flex align-items-center">
+                    <button style={{ backgroundColor: '#1E73BE', color: 'white', border: 'none', width: 'auto', textWrap: 'nowrap', fontSize: '14px' }}>Latest Updates</button>
+                    <marquee behavior="" direction="" >
+                        <div className="d-flex gap-5">
+                            <a style={{ color: 'blue', fontSize: '14px' }}>FIRST YEAR STUDENT INDUCTION PROGRAMME – 2024</a>
+                            <a style={{ color: 'blue', fontSize: '14px' }}> Excellent Placements in CBIT – 2024 [Accenture-24 & TCS-01 (9Lac Package)</a>
+                            <a style={{ color: 'blue', fontSize: '14px' }}>Eligibility Criteria for Admission to B.Tech Courses,—B.Tech 1-2 sem & MBA 1-2 sem Result coming soon..</a>
+                        </div>
+                    </marquee>
+                </div>
+            </div>
+
+            {/* NOTICE BOARD SECTOIN  */}
+            <div style={{ overflow: 'hidden', background: '#FFF4F4' }} className="row px-md-5 px-2">
+
+                <div className="col-md-6 p-md-5 pe-0 ">
+                    <div className="row p-md-5 pe-0">
+                        <div className="col-md-4 col-12 ">
+                            <div style={{ backgroundColor: '#D1DAA2' }} className=" p-0 gap-0 coursesOfferd align-items-center d-flex justify-content-center flex-column">
+                                <div className="w-100 align-items-center d-flex justify-content-center flex-column">
+                                    <img className="img-fluid p-md-4 pb-0 " style={{ maxWidth: '100px' }} src="https://cbit.edu.in/wp-content/uploads/2023/05/book.png" alt="" />
+                                    <h6 className="text-nowrap">COURSES OFFERED</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4 py-2 col-12">
+                            <div style={{ backgroundColor: '#D5E7E1' }} className=" p-0 gap-0 ourCampus align-items-center d-flex justify-content-center flex-column">
+                                <div className="w-100 align-items-center d-flex justify-content-center flex-column">
+                                    <img className="img-fluid p-md-4 pb-0 " style={{ maxWidth: '100px' }} src="https://cbit.edu.in/wp-content/uploads/2023/05/campus.png" alt="" />
+                                    <h6 className="text-nowrap">OUR CAMPUS</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4 py-2 col-12">
+                            <div style={{ backgroundColor: '#E5DDFF' }} className=" p-0 gap-0 awards align-items-center d-flex justify-content-center flex-column">
+                                <div className="w-100 align-items-center d-flex justify-content-center flex-column">
+
+                                    <img className="img-fluid p-md-4 pb-0 " style={{ maxWidth: '100px' }} src="https://cbit.edu.in/wp-content/uploads/2023/05/award-symbol.png" alt="" />
+                                    <h6 className="text-center">AWARDS & RECOGNITION</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4 py-2 col-12">
+                            <div style={{ backgroundColor: '#FFD39C' }} className=" p-0 gap-0 infrastructure align-items-center d-flex justify-content-center flex-column">
+                                <div className="w-100 align-items-center d-flex justify-content-center flex-column">
+                                    <img className="img-fluid p-md-4 pb-0 " style={{ maxWidth: '100px' }} src="https://cbit.edu.in/wp-content/uploads/2023/05/collage.png" alt="" />
+                                    <h6 className="text-nowrap">INFRASTRUCTURE</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4 py-2 col-12">
+                            <div style={{ backgroundColor: '#DBABA8' }} className=" p-0 gap-0 placements align-items-center d-flex justify-content-center flex-column">
+                                <div className="w-100 align-items-center d-flex justify-content-center flex-column">
+                                    <img className="img-fluid p-md-4 pb-0 " style={{ maxWidth: '100px' }} src="https://cbit.edu.in/wp-content/uploads/2023/05/jobs.png" alt="" />
+                                    <h6 className="text-nowrap">PLACEMENTS</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4 py-2 col-12">
+                            <div style={{ backgroundColor: '#D3ADE3' }} className=" p-0 gap-0 alumni align-items-center d-flex justify-content-center flex-column">
+                                <div className="w-100 align-items-center d-flex justify-content-center flex-column">
+                                    <img className="img-fluid p-md-4 pb-0 " style={{ maxWidth: '100px' }} src="https://cbit.edu.in/wp-content/uploads/2023/05/alumni.png" alt="" />
+                                    <h6 className="text-nowrap">ALUMNI</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-md-6 ps-0 p-5">
+                    <div className="pe-md-5 me-md-5">
+                        <p className="text-center mb-0 fw-bold">CBIT NOTICE BOARD</p>
+                        <div style={{ borderWidth: '3px', background: '#F3F5F5', borderStyle: 'solid', borderRadius: '20px' }} className="border-danger p-2">
+                            {/* <div className="marquee-container"> */}
+                            <marquee direction="up" scrollamount="100" scrolldelay="2000">
+                                <a style={{ textDecoration: 'underline' }} className="text-primary fw-semibold">ALUMNI-MEET-2024</a>
+                                <p>ALUMNI-MEET-2024</p>
+                                <a style={{ textDecoration: 'underline' }} className="text-primary fw-semibold">ALUMNI-MEET-2024</a>
+                                <p>ALUMNI-MEET-2024</p>
+                                <a style={{ textDecoration: 'underline' }} className="text-primary fw-semibold">ALUMNI-MEET-2024</a>
+                                <p>ALUMNI-MEET-2024</p>
+                                <a style={{ textDecoration: 'underline' }} className="text-primary fw-semibold">ALUMNI-MEET-2024</a>
+                                <p>ALUMNI-MEET-2024</p>
+                                <a style={{ textDecoration: 'underline' }} className="text-primary fw-semibold">ALUMNI-MEET-2024</a>
+                                <p>ALUMNI-MEET-2024</p>
+                            </marquee>
+                            {/* </div> */}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            {/* WELCOME SECTION  */}
+            <div
+                className="pt-5"
+                style={{
+                    backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2022/03/day-care-hero-blobs-background.svg")`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '50%',
+                    backgroundPosition: 'right',
+                    // width: '100vw',  // full width of the viewport
+                    height: '85vh', // full height of the viewport
+                }}
+            >
+                <div className="p-5 container-md">
+                    <div className="row px-5 ">
+
+                        <div className="col-md-6 d-flex flex-column gap-3">
+                            <div>
+                                <p className="fw-bold " style={{ textTransform: 'uppercase', letterSpacing: 2 }}>Welcome to</p>
+                                <h1 style={{ fontSize: '50px', color: '#203764' }} className="fw-bold">Chaitanya Bharathi Institute of Technology</h1>
+                            </div>
+                            <p className="" style={{ fontSize: '14px' }}>Chaitanya Bharathi Institute of Technology was established at Proddatur in Y S R (Kadapa) District, Andhra Pradesh, India, with an objective of providing quality and value education to the students. It is one of the flagship institution started by the well known Philanthropist Sri. V. Jayachandra Reddy, Secretary and Correspondent along with his young and energetic team members.</p>
+
+                            <div className="d-flex gap-4 ">
+                                <button className="rounded-pill fw-bold btn btn-primary" >About CBIT</button>
+                                <button className="rounded-pill fw-bold btn btn-success">
+                                    <span></span>
+                                    Download Brochure
+                                </button>
+                            </div>
+                        </div>
+
+                        <div className="col-md-6 ps-5 d-flex align-items-center">
+                            <div className="">
+                                <img className="img-fluid " style={{ borderRadius: '20px', minHeight: '300px' }} src="https://cbit.edu.in/wp-content/uploads/2023/06/CBIT-slide.jpg" alt="" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {/* Peoples section  */}
+            <div className="p-5 container-md">
+                <div className="row p-4">
+                    <div className="col-md-4 mb-5">
+                        <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#6CF264', padding: '35px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
+                        {/* <img className="img-fluid" style={{ borderRadius: '20px', position: 'relative', top: '-70px' }} src="https://cbit.edu.in/wp-content/uploads/elementor/thumbs/chairman-q8pt24lxxbmginimgvkfu5ga1eeyt6dxkl3h3eih9k.jpg" alt="" /> */}
+                        <img className="img-fluid" style={{ borderRadius: '20px',height:"17rem",width:"40rem", position: 'relative', top: '-70px' }} src={saikiran2} alt="" />
+                            <div className="" style={{ position: 'relative', top: '-40px' }}>
+                                <h5 className="text-center fw-bold">Dr. V. Jaya Chandra Reddy</h5>
+                                <p className="fw-semibold text-center">Chairman</p>
+                            </div>
+                            <p className="" style={{ fontSize: '14px', position: 'relative', top: '-20px' }}>CBIT is located on a beautiful campus, surrounded with abundant greenery and serenity. I strongly feel that the future of India is shaped in class rooms….</p>
+                            <div className="w-100 pb-4"> <a className="text-primary f-14 fw-semibold" href="">Read more {">"}</a></div>
+                        </div>
+                    </div>
+                    <div className="col-md-4 mb-5">
+                        <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#084BCE', padding: '35px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
+                            {/* <img className="img-fluid" style={{ borderRadius: '20px', position: 'relative', top: '-70px' }} src="https://cbit.edu.in/wp-content/uploads/elementor/thumbs/V.Lohit-Reddy-q8pt26hmazp15vfw5wdoz4z7865p8kle8ueg1yfox4.jpg" alt="" /> */}
+                            <img className="img-fluid" style={{ borderRadius: '20px', position: 'relative', top: '-70px' }} src={tony} alt="" />
+                            <div className="" style={{ position: 'relative', top: '-40px' }}>
+                                <h5 className="text-center fw-bold">V. Lohit Reddy</h5>
+                                <p className="fw-semibold text-center">Director</p>
+                            </div>
+                            <p className="" style={{ fontSize: '14px', position: 'relative', top: '-20px' }}>Success is not solely measured by accolades and grades rather, it lies in the strength of character, in the resilience to confront adversity, and in the capacity ….</p>
+                            <div className="w-100 "> <a className="text-primary f-14 fw-semibold" href="">Read more {">"}</a></div>
+                        </div>
+                    </div>
+
+                    <div className="col-md-4 mb-5">
+                        <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#084BCE', padding: '35px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
+                        {/* <img className="img-fluid" style={{ borderRadius: '20px', position: 'relative', top: '-70px' }} src="https://cbit.edu.in/wp-content/uploads/elementor/thumbs/principal-q7gy24l666cgj3418ji4ckt74z2tjgm4qau0nv9s6g.jpg" alt="" /> */}
+                        <img className="img-fluid" style={{ borderRadius: '20px', position: 'relative', top: '-70px' }} src={moma} alt="" />
+                            <div className="" style={{ position: 'relative', top: '-30px' }}>
+                                <h5 className="text-center fw-bold">Dr. G. Sreenivasula Reddy</h5>
+                                <p className="fw-semibold text-center">Principal</p>
+                            </div>
+                            <p className="" style={{ fontSize: '14px' }}>I am happy to take this opportunity to introduce you to the Chaitanya Bharathi Institute of Technology (CBIT),….</p>
+                            <div className="w-100 py-2 pb-4"> <a className="text-primary f-14 fw-semibold" href="">Read more {">"}</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* videos  */}
+            <div className="" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2023/06/texture-background.jpg")` }}>
+
+                <div className="container-md " style={{ paddingTop: '', paddingBottom: '0px', padding: '50px' }}>
+                    <div className="row ">
+                        <div className="col-md-6 py-md-5 my-md-4">
+                            <div className="d-flex gap-3 text-center flex-end flex-column align-items-center">
+                                <img className="img-fluid img-thumbnail shadow" width={200} height={100} src="https://cbit.edu.in/wp-content/uploads/2023/05/KSR_2562.jpg" alt="" />
+                                <h2 className="fw-bold" style={{ color: "#4175FC" }} >CBIT College Campus Tour</h2>
+                                <div>
+                                    <p style={{ fontSize: "14px" }}>CBIT takes pride in introducing itself as one of the most sought after institutions not only in Andhra Pradesh and Telangana, but also in India. It is a hub of high quality students who are tomorrow’s great engineers.</p>
+                                    <button style={{ backgroundColor: "#0359BC", color: 'white' }} className="btn fs-5 py-1 fw-semibold btn-hover rounded-pill">View all Videos</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 position-relative" style={{ height: '20rem' }}>
+                            <div className="d-none d-md-block" style={{ position: 'relative', top: '-80px' }}>
+                                <img className="img-fluid" src={vision} alt="" />
+                            </div>
+                            <div className="d-md-none mt-2" style={{}}>
+                                <img className="img-fluid" src={vision} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            {/* logos  */}
+            <div className="text-light p-4" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2023/05/element1.png")`, backgroundColor: '#0948A0', backgroundRepeat: 'repeat' }}>
+
+                <div className="container-md py-5 px-5">
+                    <div className="d-flex justify-content-between">
+
+                        <div className="d-flex flex-column gap-2  justify-content-center align-items-center text-center">
+                            <img width={130} className="img-circle img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/06/ugc.png" alt="" />
+                            <div>
+                                <h5 className="fw-bold">Recognised by</h5>
+                                <h5 className="fw-bold ">UGC</h5>
+                            </div>
+                        </div>
+                        <div className="d-flex flex-column gap-2  justify-content-center align-items-center text-center">
+                            <img width={130} className="img-circle img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/06/naac.png" alt="" />
+                            <div>
+                                <h5 className="fw-bold">Accredited by</h5>
+                                <h5 className="fw-bold ">NAAC</h5>
+                            </div>
+                        </div>
+                        <div className="d-flex flex-column gap-2  justify-content-center align-items-center text-center">
+                            <img width={130} className="img-circle img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/06/nba1.png" alt="" />
+                            <div>
+                                <h5 className="fw-bold"> Accredited by</h5>
+                                <h5 className="fw-bold ">NBA</h5>
+                            </div>
+                        </div>
+                        <div className="d-flex flex-column gap-2  justify-content-center align-items-center text-center">
+                            <img width={130} className="img-circle img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/06/aicte-logo.png" alt="" />
+                            <div>
+                                <h5 className="fw-bold">Approved by</h5>
+                                <h5 className="fw-bold ">AICTE</h5>
+                            </div>
+                        </div>
+                        <div className="d-flex flex-column gap-2  justify-content-center align-items-center text-center">
+                            <img width={130} className="img-circle img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/06/S.B.T.E.T.png" alt="" />
+                            <div>
+                                <h5 className="fw-bold">Approved by</h5>
+                                <h5 className="fw-bold ">S.B.T.E.T</h5>
+                            </div>
+                        </div>
+                        <div className="d-flex flex-column gap-2  justify-content-center align-items-center text-center">
+                            <img width={130} className="img-circle img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/06/JNTUA.png" alt="" />
+                            <div>
+                                <h5 className="fw-bold">Affiliated of</h5>
+                                <h5 className="fw-bold ">JNTUA</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            {/* Courses  */}
+            <div className="py-5"
+                style={{
+                    backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2022/03/day-care-hero-blobs-background.svg")`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '100%',
+                    backgroundPosition: 'right',
+                    // width: '100vw',  // full width of the viewport
+                    height: '89vh', // full height of the viewport
+                }}>
+                <div className="container-md " style={{ padding: "40px" }}>
+                    <div className="row ms-md-5 ">
+                        <div className="col-md-5 d-flex flex-end">
+                            <img style={{ borderRadius: '25px', maxHeight: "70vh" }} className="img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/05/COURSES.png" alt="" />
+                        </div>
+                        <div className="col-md-7 ps-md-5">
+                            <div className="d-flex flex-column gap-2">
+                                <h1 className="fw-bold" style={{ color: "#203764", fontSize: '50px' }} >Courses @CBIT</h1>
+
+                                <p style={{ color: "#101218", letterSpacing: 2 }} className="text-uppercase fw-bold">providing endless opportunities to the students</p>
+
+                                <div className="">
+
+                                    <div className="" style={{ borderColor: "#5C8345", borderStyle: 'solid', borderWidth: "2px" }}>
+                                        <div onClick={() => setShowList(!showList)} style={{ background: '#5C8345' }} className="d-flex align-items-center cursor text-light fs-6 fw-semibold p-4 py-3 gap-2">
+                                            {showList ? <i className="fa-solid fa-minus"></i> : <i className="fa-solid fa-plus"></i>} UG Courses
+                                        </div>
+                                        {
+                                            showList ? <div className="p-4 animated-list" style={{ fontSize: '14px' }}>
+                                                <ul style={{ listStyleType: 'disc', listStyle: "disc" }}>
+                                                    <li>
+                                                        {/* <i class="fa-solid fa-circle-dot"></i>  */}
+                                                        Computer Science and Engineering</li>
+                                                    <li>Computer Science and Engineering (AI & ML)</li>
+                                                    <li>Computer Science and Engineering (AI)</li>
+                                                    <li>Computer Science and Engineering (Data Science)</li>
+                                                    <li>Electronics and Communication Engineering</li>
+                                                    <li>Electrical and Electronics Engineering</li>
+                                                    <li>Mechanical Engineering</li>
+                                                    <li>Civil Engineering</li>
+                                                </ul>
+                                            </div> : null
+                                        }
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <button style={{}} className="btn rounded-pill border-dark border hover-black">Know more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* dipartments  */}
+            <div className="text-light p-4" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2023/06/bgp.jpg")`, backgroundRepeat: 'repeat' }}>
+                <div className="container-md p-5">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <div className="d-flex flex-column gap-3">
+                                <h1 style={{ fontSize: "55px" }} className="fw-bold ms-4">Departments</h1>
+                                <ul className="text-center d-flex flex-column gap-3">
+                                    <li style={{ background: "#9C977C" }} className="rounded-pill department-animi cursor p-3 fw-semibold py-2" >Civil Engineering</li>
+                                    <li>Civil Engineering</li>
+                                    <li>Civil Engineering</li>
+                                    <li>Civil Engineering</li>
+                                    <li>Civil Engineering</li>
+                                    <li>Civil Engineering</li>
+                                    <li>Civil Engineering</li>
+                                    <li>Civil Engineering</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <div>
+                                <img className="img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/06/dept.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* infrastructure  */}
+            <div className="py-5 pt-0"
+                style={{
+                    backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2022/03/day-care-hero-blobs-background.svg")`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '60%',
+                    backgroundPosition: 'right',
+                    // width: '100vw',  // full width of the viewport
+                    // height: '89vh', // full height of the viewport
+                }}>
+                <div className="container-md " style={{ padding: "20px" }}>
+                    <div className="row ">
+                        <h4 className="text-center fw-semibold">CBIT</h4>
+                        <h1 style={{ color: "#0274BE", fontSize: "50px" }} className="text-center mb-4 mt-0 fw-bold">Infrastructure</h1>
+
+                        <div className="col-md-4 d-flex flex-column text-center">
+                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
+                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
+                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                        </div>
+                        <div className="col-md-4 d-flex flex-column text-center">
+                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
+                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
+                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                        </div>
+                        <div className="col-md-4 d-flex flex-column text-center">
+                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
+                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
+                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                        </div>
+                        <div className="col-md-4 d-flex flex-column text-center">
+                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
+                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
+                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                        </div>
+                        <div className="col-md-4 d-flex flex-column text-center">
+                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
+                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
+                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                        </div>
+                        <div className="col-md-4 d-flex flex-column text-center">
+                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
+                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
+                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                        </div>
+                        <div className="col-md-4 d-flex flex-column text-center">
+                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
+                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
+                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                        </div>
+                        <div className="col-md-4 d-flex flex-column text-center">
+                            <h4 style={{ color: "#0E4DD1" }} className="fw-bold my-3">Building Area</h4>
+                            <p>A well-equipped infrastructure to promote the academic and cultural activities of CBIT is one of our primary accomplishments.</p>
+                            <hr style={{ color: "#0274BE", borderWidth: "2px" }} className="mt-4" />
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            {/* Achiments  */}
+            <div className="py-5">
+                <div className="text-center">
+                    <h1 className="fw-bold">A Quality Student Deserves A Quality Education</h1>
+                    <p>Your dream college is just a step away- Discover the possibilities and open the door to your future with us !!</p>
+                    <div className="mx-auto">
+                        <button className="btn hover-white rounded-pill btn-primary">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div className="text-light p-4" style={{ background: "#E7E7E7" }}>
+
+                <div className="container-md w-100 p-5">
+                    <h1 style={{ color: "#203764", fontSize: "50px" }} className=" fw-bold text-center">Honours & Achievements</h1>
+
+                    <div className="d-flex flex-wrap p-5 pt-3">
+
+                        <div className="m-2">
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                        </div>
+                        <div className="m-2">
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                        </div>
+                        <div className="m-2">
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                        </div>
+                        <div className="m-2">
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                        </div>
+                        <div className="m-2">
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                        </div>
+                        <div className="m-2">
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                        </div>
+                        <div className="m-2">
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                        </div>
+                        <div className="m-2">
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                        </div>
+                        <div className="m-2">
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                        </div>
+                        <div className="m-2">
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                        </div>
+                        <div className="m-2">
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                        </div>
+                        <div className="m-2">
+                            <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
+                        </div>
+
+                    </div>
+
+                    <div className="w-100 text-center">
+                        <button className="btn hover-white mx-auto py-1 fs-5 fw-semibold rounded-pill btn-primary">View More</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            {/* placements  */}
+            <div className="text-light p-4" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2022/03/day-care-blobs-1.svg")`, backgroundRepeat: 'repeat' }}>
+            </div>
+
+            <div className="container-md">
+                <h1 style={{ color: "#203764", fontSize: "50px" }} className="pt-5 fw-bold text-center">Honours & Achievements</h1>
+                <div className="row p-md-5 gap-5">
+                    <div className="col-md-5">
+                        <img style={{ borderRadius: "30px", maxWidth: "33rem" }} className="ms-auto img-fluid shadow" src="https://cbit.edu.in/wp-content/uploads/2023/06/placement.jpg" alt="" />
+                    </div>
+                    <div className="col-md-5">
+                        <p style={{ textTransform: "uppercase", color: "#2093DA" }} className="fw-semibold">
+                            We at CBIT, extend a Hearty Invitation to all our Recruiting Partners.
+                        </p>
+                        <div className="text-dark">
+                            <p>The college has career guidance and placement cell meant to provide career guidance and placement training to the students.</p>
+                            <p>The placement cell organizes on-campus and off-campus recruitments and pre placement training programs in aptitude test, group discussions, interviews and presentation.</p>
+                            <p>Mock interviews and GDs are conducted on a regular basis so as to equip final and pre-final students to face the challenges of recruitment scenario.</p>
+                            <p>Hearty Congratulations to the students placed through campus recruitment in DBS, TCS, Infosys Technologies Limited, Tech Mahindra, NTT DATA, Mind Tree, WIPRO,HCL ,Hexaware and so on…</p>
+                        </div>
+                        <button style={{ background: "#0359BC" }} className="btn text-light py-2 btn-hover rounded-pill fw-semibold">Know More</button>
+                    </div>
+                </div>
+                <div style={{ background: "white" }}>
+                    <marquee behavior="smooth" direction="left">
+                        <img style={{ maxWidth: "10rem" }} className="img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/05/1.png" alt="" />
+                        <img style={{ maxWidth: "10rem" }} className="img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/05/2.png" alt="" />
+                        <img style={{ maxWidth: "10rem" }} className="img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/05/3.png" alt="" />
+                        <img style={{ maxWidth: "10rem" }} className="img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/05/4.png" alt="" />
+                        <img style={{ maxWidth: "10rem" }} className="img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/05/5.png" alt="" />
+                        <img style={{ maxWidth: "10rem" }} className="img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/05/6.png" alt="" />
+                    </marquee>
+                </div>
+            </div>
+
+
+            {/* footer  */}
+            <div className="text-light p-4" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2023/05/footer.png")`, backgroundRepeat: 'repeat' }}>
+                <div className="container-md">
+                    <div className="row gap-4 p-5 text-dark">
+                        <div className="col-md-2 col-sm-6 col-12">
+                            <div className="d-flex align-items-center text-dark flex-column">
+                                <img className="img-fluid" style={{ width: "15rem" }} src="https://cbit.edu.in/wp-content/uploads/2023/05/cbit.png" alt="" />
+                                <p className="text-left">Chaitanya Bharathi Institute Of Technology - Proddatur in Y S R (Kadapa) District, Andhra Pradesh</p>
+                            </div>
+                        </div>
+                        <div className="col-md-3 col-sm-6 col-12">
+                            <h4 className="fw-bold py-4 ps-4 ">Important Links</h4>
+                            <ul className="text-primary">
+                                <li>AICTE Mandatory Disclosures</li>
+                                <li>IIC</li>
+                                <li>NSS</li>
+                                <li>Student Achievements</li>
+                                <li>Faculty Achievements</li>
+                                <li>Student Welfare</li>
+                                <li>Downloads</li>
+                                <li>Committee</li>
+                            </ul>
+                        </div>
+                        <div className="col-md-2 col-sm-6 col-12">
+                            <h4 className="fw-bold py-4 ps-4">Academics</h4>
+                            <ul className="text-primary">
+                                <li>Admission Procedure</li>
+                                <li>Academic Calendar</li>
+                                <li>Academic Council</li>
+                                <li>Affiliations</li>
+                                <li>Admission Form</li>
+                                <li>Courses Offered</li>
+                                <li>Campus Life</li>
+                                <li>Contact</li>
+                                <li>Cafeteria</li>
+                            </ul>
+                        </div>
+                        <div className="col-md-4 ms-md-4 col-sm-6 col-12">
+                            <h4 className="fw-bold py-4">Get in touch</h4>
+                            <div>
+                                <p>Chaitanya Bharathi Institute Of Technology,</p>
+                                <p>Vidya Nagar, Proddatur, YSR Kadapa (Dist.), Andhra Pradesh 516360,</p>
+                                <p>Phone: <span className="text-primary">+91-7659807111</span></p>
+                                <p>Email: <span className="text-primary"> info@cbit.edu.in</span></p>
+                                <div className="d-flex gap-4">
+                                    <a href="">Departments</a>
+                                    <a href="">AQAR</a>
+                                    <a href="">Placements</a>
+                                    <a href="">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="p-3" style={{ background: "#203764" }}>
+                <div className="mx-auto text-center">
+                    <img className="img-fluid" style={{ width: "5rem" }} src="https://cbit.edu.in/wp-content/uploads/2023/05/cbit.png" alt="" />
+                    <p style={{ color: "#8A8A8E" }} className="text-center">
+                        Copyright © 2024 www.cbit.edu.in | Designed by
+                        <span style={{ color: "#1E77D1" }}> Shadow coders <img style={{ width: "1rem" }} className="img-fluid" src="https://www.briaux.com/briaux16.png" alt="" /></span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    )
+}
+
