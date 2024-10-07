@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "locomotive-scroll": "^4.1.4",
     "preact": "^10.24.1",
     "react-bootstrap": "^2.10.4",
-    "react-router-dom": "^6.26.0"
+    "react-router-dom": "^6.26.0",
+    "smooth-scrollbar": "^8.8.4"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.9.0",

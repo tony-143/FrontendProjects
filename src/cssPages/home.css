@@ -1,3 +1,55 @@
+body{
+    scroll-behavior: smooth;
+    
+}
+.background-my-section
+{
+    
+        /* White background */
+        background-color: white;
+        
+        /* Create a sky-blue shade on the left-middle side */
+        background-image: linear-gradient(to right, skyblue 20%, transparent 40%),
+                          url('stars.png'); /* Add a star image */
+        
+        /* Position the background stars */
+        background-position: center;
+        
+        /* Adjust star size and repetition */
+        background-size: contain;
+        background-repeat: no-repeat;
+    
+        /* Full-screen coverage */
+        /* height: 100vh; */
+        margin: 0;
+        padding: 0;
+
+    
+}
+
+.people-section
+{
+        /* White background */
+        background-color: white;
+        
+        /* Create a sky-blue shade on the left-middle side */
+        background-image: linear-gradient(to right, skyblue 20%, transparent 40%),
+                          url('stars.png'); /* Add a star image */
+        
+        /* Position the background stars */
+        background-position: center;
+        
+        /* Adjust star size and repetition */
+        background-size: contain;
+        background-repeat: no-repeat;
+    
+        /* Full-screen coverage */
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    
+}
+
 .coursesOfferd :hover{
 background: #89B322;
 }
