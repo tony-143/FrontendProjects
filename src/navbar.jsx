@@ -19,15 +19,15 @@ function Navbar() {
 
     return (<>
 
-        <div className="d-lg-none">
-            <div className="d-flex w-100 text-right align-items-center jusutify-content-between">
+        <div className="d-lg-none d-flex">
+            <div className="d-flex w-100 gap-5 text-right align-items-center justify-content-between">
                 <div>
-                    <img src="https://cbit.edu.in/wp-content/uploads/2023/06/logo-cbit-new-1-600x102.jpg" alt="" />
+                    <img className='img-fluid' src="https://cbit.edu.in/wp-content/uploads/2023/06/logo-cbit-new-1-600x102.jpg" alt="" />
                 </div>
                 {
                     !menu ?
-                        <i onClick={() => setMenu(!menu)} className="fa-solid fs-6 fa-bars"></i> :
-                        <i onClick={() => setMenu(!menu)} class="fa-solid fa-xmark fs-6"></i>
+                        <i onClick={() => setMenu(!menu)} className="fa-solid p-3 fs-6 pe-4 fa-bars"></i> :
+                        <i onClick={() => setMenu(!menu)} class="fa-solid fa-xmark p-3 pe-4 fs-6"></i>
                 }
             </div>
 
@@ -289,7 +289,7 @@ function Navbar() {
         {/* lg screns  */}
         <div className='d-none d-lg-block'>
             <div style={{ backgroundColor: '#203764', fontSize: '9px' }} className="">
-                <div style={{ backgroundColor: '#203764', fontSize: '13px' }} className="container px-5 align-items-center text-light py-2 d-flex justify-content-between">
+                <div style={{ backgroundColor: '#203764', fontSize: '13px' }} className="container-lg px-5 align-items-center text-light py-2 d-flex justify-content-between">
                     <div className='d-flex fw-semibold gap-3'>
                         <a href="https://alumni.cbit.edu.in/?_gl=1*1ksxh01*_ga*MTkwODk2MjE5NS4xNzI3NDEyMjg4*_ga_YT0DZYY4CF*MTcyODI3NzI4Ny41LjEuMTcyODI3OTY4NS4wLjAuMA..">Alumni</a>
                         <a href="https://cbit.edu.in/testimonials/">Testimonials</a>
@@ -314,7 +314,7 @@ function Navbar() {
 
 
 
-            <div className="container-md py-2 justify-content-between d-flex align-items-center">
+            <div className="container-xl py-2 justify-content-between d-flex align-items-center">
                 <div>
                     <img src="https://cbit.edu.in/wp-content/uploads/2023/06/logo-cbit-new-1-600x102.jpg" alt="" />
                 </div>
@@ -322,7 +322,7 @@ function Navbar() {
                 <div className="d-flex gap-2">
                     <div style={{ width: '4px', backgroundColor: '#B6D230' }} className=' border'></div>
 
-                    <div style={{ fontSize: '14px' }} className='d-flex me-3 flex-column gap-0 '>
+                    <div style={{ fontSize: '14px' }} className='d-flex text-nowrap me-3 flex-column gap-0 '>
                         <li>Recognised by UGC Under the section 2(f) & 12(B) of UGC Act, 1956</li>
                         <li> Accredited by NAAC with "A" Grade & NBA (Civil, EEE, ECE & CSE</li>
                         <li>Approved by AICTE, New Delhi, Affiliated of JNTUA, Anantapuramu</li>
@@ -337,7 +337,7 @@ function Navbar() {
             {/* lists  */}
             <div style={{ backgroundColor: '#6755A3', zIndex: 999 }} className=''>
 
-                <div className="container d-flex gap-3 py-2 align-items-center justify-content-center text-light">
+                <div className="container d-flex gap-3 flex-nowrap text-nowrap py-2 align-items-center justify-content-center text-light">
                     <li><span className='span fs-6'>Home</span></li>
                     <li>
                         <div className="dropdown fs-6">

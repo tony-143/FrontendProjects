@@ -2,11 +2,7 @@ import { useEffect, useRef, useState } from "preact/hooks"
 import Navbar from "./navbar"
 import './cssPages/home.css'
 import vision from '../public/images/vision.png'
-import tony from '../public/images/tony.jpg'
-import saikiran from '../public/images/saikiran.jpg'
 import saikiran2 from '../public/images/saikiran2.jpg'
-import moma from '../public/images/moma.jpg'
-import locomotiveScroll from "locomotive-scroll"
 import hod from '../public/images/hod.jpg'
 import sai from '../public/images/sai.jpg'
 import abba from '../public/images/abba.jpg'
@@ -31,29 +27,28 @@ export const Home = () => {
             if (count > 2) {
                 count = 0;
             }
-        }, 5000);
+        }, 10000);
 
     }, [count])
-
 
 
     return (
         <div className="" ref={scrollRef} style={{ overflowX: "hidden" }}>
 
-            <div className="position-relative">
+            <div className="position-relative w-100">
                 <Navbar />
                 {/* imge */}
 
-                <div style={{ height: "47rem",zIndex:-1 }} className="w-100 overflow-hidden position-absolute overflow-hidden position-relative mt-2">
+                <div style={{ height: "42rem", zIndex: -1 }} className="w-100 overflow-hidden position-absolute overflow-hidden position-relative mt-2">
                     <div style={{ zIndex: -1 }}>
-                        <img src={url} style={{ objectFit: 'cover', width: '100%', height: '45rem', zIndex: '-1' }} className="image"></img>
+                        <img src={url} style={{ objectFit: 'cover', width: '100%', height: '45rem', zIndex: '-1' }} className=""></img>
                     </div>
                     <div className="position-absolute top-50 text-light text-center w-100">
                         <h1>Your Future Secure With Us</h1>
                         <h1 style={{ fontSize: '50px' }}>Chaitanya Bharathi Institute of Technology</h1>
                     </div>
                 </div>
-                <div className="" style={{ height: "48rem" }}></div>
+                <div className="" style={{ height: "42rem" }}></div>
             </div>
 
             {/* Marquee tag  */}
@@ -73,13 +68,13 @@ export const Home = () => {
             {/* NOTICE BOARD SECTOIN  */}
             <div style={{ overflow: 'hidden', background: '#FFF4F4' }} className="py-5" >
                 <div className="container-md py-5">
-                    <div style={{ overflow: 'hidden', background: '#FFF4F4' }} className="row px-2">
+                    <div style={{ overflow: 'hidden', background: '#FFF4F4' }} className="row d-flex justify-content-between px-2">
 
-                        <div className="col-md-6 p-md-5 pe-0 ">
-                            <div className="row p-md-5 pe-0 py-5">
+                        <div className="col-md-6 d-flex align-items-center  pe-0 ">
+                            <div className="row pe-0 py-5">
 
-                                <a href="https://cbit.edu.in/admissions/courses-offered/" className="col-md-4 col-12 text-dark">
-                                    <div style={{ backgroundColor: '#D1DAA2' }} className=" p-0 gap-0 coursesOfferd align-items-center d-flex justify-content-center flex-column">
+                                <a href="https://cbit.edu.in/admissions/courses-offered/" style={{ minWidth: '200px' }} className="col-md-4 col-12 text-dark">
+                                    <div style={{ backgroundColor: '#D1DAA2', objectFit: 'cover' }} className=" p-0 gap-0 coursesOfferd align-items-center d-flex justify-content-center flex-column">
                                         <div className="w-100 align-items-center d-flex justify-content-center flex-column">
                                             <img className="img-fluid p-md-4 pb-0 " style={{ maxWidth: '100px' }} src="https://cbit.edu.in/wp-content/uploads/2023/05/book.png" alt="" />
                                             <h6 className="text-nowrap">COURSES OFFERED</h6>
@@ -87,7 +82,7 @@ export const Home = () => {
                                     </div>
                                 </a>
 
-                                <a href="https://cbit.edu.in/campus-life/" className="col-md-4 py-2 col-12 text-dark">
+                                <a href="https://cbit.edu.in/campus-life/" style={{ minWidth: '200px' }} className="col-md-4 py-2 col-12 text-dark">
                                     <div style={{ backgroundColor: '#D5E7E1' }} className=" p-0 gap-0 ourCampus align-items-center d-flex justify-content-center flex-column">
                                         <div className="w-100 align-items-center d-flex justify-content-center flex-column">
                                             <img className="img-fluid p-md-4 pb-0 " style={{ maxWidth: '100px' }} src="https://cbit.edu.in/wp-content/uploads/2023/05/campus.png" alt="" />
@@ -95,7 +90,7 @@ export const Home = () => {
                                         </div>
                                     </div>
                                 </a>
-                                <a href="https://cbit.edu.in/about/" className="col-md-4 py-2 col-12 text-dark">
+                                <a href="https://cbit.edu.in/about/" style={{ minWidth: '200px' }} className="col-md-4 py-2 col-12 text-dark">
                                     <div style={{ backgroundColor: '#E5DDFF' }} className=" p-0 gap-0 awards align-items-center d-flex justify-content-center flex-column">
                                         <div className="w-100 align-items-center d-flex justify-content-center flex-column">
 
@@ -104,7 +99,7 @@ export const Home = () => {
                                         </div>
                                     </div>
                                 </a>
-                                <a href="https://cbit.edu.in/infrastructure/" className="col-md-4 py-2 col-12 text-dark">
+                                <a href="https://cbit.edu.in/infrastructure/" style={{ minWidth: '200px' }} className="col-md-4 py-2 col-12 text-dark">
                                     <div style={{ backgroundColor: '#FFD39C' }} className=" p-0 gap-0 infrastructure align-items-center d-flex justify-content-center flex-column">
                                         <div className="w-100 align-items-center d-flex justify-content-center flex-column">
                                             <img className="img-fluid p-md-4 pb-0 " style={{ maxWidth: '100px' }} src="https://cbit.edu.in/wp-content/uploads/2023/05/collage.png" alt="" />
@@ -112,7 +107,7 @@ export const Home = () => {
                                         </div>
                                     </div>
                                 </a>
-                                <a href="https://cbit.edu.in/placements/" className="col-md-4 py-2 col-12  text-dark">
+                                <a href="https://cbit.edu.in/placements/" style={{ minWidth: '200px' }} className="col-md-4 py-2 col-12  text-dark">
                                     <div style={{ backgroundColor: '#DBABA8' }} className=" p-0 gap-0 placements align-items-center d-flex justify-content-center flex-column">
                                         <div className="w-100 align-items-center d-flex justify-content-center flex-column">
                                             <img className="img-fluid p-md-4 pb-0 " style={{ maxWidth: '100px' }} src="https://cbit.edu.in/wp-content/uploads/2023/05/jobs.png" alt="" />
@@ -120,7 +115,7 @@ export const Home = () => {
                                         </div>
                                     </div>
                                 </a>
-                                <a href="https://cbit.edu.in/alumni/" className="col-md-4 py-2 col-12 text-dark" >
+                                <a href="https://cbit.edu.in/alumni/" style={{ minWidth: '200px' }} className="col-md-4 py-2 col-12 text-dark" >
                                     <div style={{ backgroundColor: '#D3ADE3' }} className=" p-0 gap-0 alumni align-items-center d-flex justify-content-center flex-column">
                                         <div className="w-100 align-items-center d-flex justify-content-center flex-column">
                                             <img className="img-fluid p-md-4 pb-0 " style={{ maxWidth: '100px' }} src="https://cbit.edu.in/wp-content/uploads/2023/05/alumni.png" alt="" />
@@ -131,8 +126,8 @@ export const Home = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-6 ps-0 p-5">
-                            <div className="pe-md-5 me-md-5">
+                        <div className="col-md-6 ps-lg-5">
+                            <div className="">
                                 <p className="text-center mb-0 fw-bold">CBIT NOTICE BOARD</p>
                                 <div style={{ borderWidth: '3px', background: '#F3F5F5', borderStyle: 'solid', borderRadius: '20px' }} className="border-danger p-2">
                                     {/* <div className="marquee-container"> */}
@@ -159,17 +154,18 @@ export const Home = () => {
 
             {/* WELCOME SECTION  */}
             <div
-                className="pt-5"
+                className="pt-5 py-lg-5"
                 style={{
                     backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2022/03/day-care-hero-blobs-background.svg")`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: '50%',
+                    objectFit: 'cover',
                     backgroundPosition: 'right',
                     // width: '100vw',  // full width of the viewport
-                    height: '85vh', // full height of the viewport
+                    // height: '85vh', // full height of the viewport
                 }}
             >
-                <div className="p-5 container-md">
+                <div className="p-lg-5 container-lg">
                     <div className="row px-5 ">
 
                         <div className="col-md-6 d-flex flex-column gap-3">
@@ -188,18 +184,19 @@ export const Home = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-6 ps-5 d-flex align-items-center">
+                        <div className="col-md-6 pt-5 pt-lg-0  d-flex align-items-center">
                             <div className="">
-                                <img className="img-fluid " style={{ borderRadius: '20px', minHeight: '300px' }} src="https://cbit.edu.in/wp-content/uploads/2023/06/CBIT-slide.jpg" alt="" />
+                                <img className="img-fluid" style={{ borderRadius: '20px', minHeight: '350px' }} src="https://cbit.edu.in/wp-content/uploads/2023/06/CBIT-slide.jpg" alt="" />
                             </div>
                         </div>
 
                     </div>
                 </div>
             </div>
+
             {/* Peoples section  */}
-            <div className="p-5 container-md">
-                <div className="row p-4">
+            <div className="p-lg-5 mt-5 container-lg">
+                <div className="row p-lg-4 pt-4">
                     <div className="col-md-4 mb-5">
                         <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#6CF264', padding: '35px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
                             <img className="img-fluid" style={{ borderRadius: '20px', position: 'relative', top: '-70px' }} src="https://cbit.edu.in/wp-content/uploads/elementor/thumbs/chairman-q8pt24lxxbmginimgvkfu5ga1eeyt6dxkl3h3eih9k.jpg" alt="" />
@@ -241,22 +238,20 @@ export const Home = () => {
                 </div>
             </div>
 
-
-
+            {/* WELCOME SECTION 2 */}
             <div className="background-my-section">
-                {/* WELCOME SECTION 2 */}
                 <div
                     className="pt-5"
                     style={{
                         backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2022/03/day-care-hero-blobs-background.svg")`,
                         backgroundRepeat: 'no-repeat',
-                        backgroundSize: '50%',
+                        backgroundSize: 'cover',
                         backgroundPosition: 'right',
                         // width: '100vw',  // full width of the viewport
-                        height: '85vh', // full height of the viewport
+                        // height: '85vh', // full height of the viewport
                     }}
                 >
-                    <div className="p-5 pt-0 container-md">
+                    <div className="p-lg-5 pt-0 container-lg">
                         <h1 style={{ fontSize: '50px', color: '#203764' }} className="fw-bold pb-5 text-center">Department of CSE</h1>
                         <div className="row px-5 ">
 
@@ -283,76 +278,67 @@ export const Home = () => {
 
             </div>
 
-
-
             {/* Peoples section  2 */}
-
-            <div className="background-my-sectio">
-            <div
+            <div className="">
+                <div
                     className="pt-5"
                     style={{
                         backgroundImage: `url(${saikiran2})`,
                         backgroundRepeat: 'no-repeat',
-                        backgroundSize: '100%',
+                        backgroundSize: 'cover',
                         // backgroundPosition: 'right',
                         // width: '100vw',  // full width of the viewport
-                        height: '85vh', // full height of the viewport
+                        // height: '85vh', // full height of the viewport
                     }}
-                >                
-
-        <h1 style={{ fontSize: '50px', color: '#203764' }} className="fw-bold pb-5 text-center">Developers Community </h1>
-
-
-             <div className="p-5 pb-0 container-md">
-                    <div className="row p-4">
-                        <div className="col-md-4 mb-5">
-                            <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#6CF264', padding: '10px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
-                                <img className="img-fluid" style={{ borderRadius: '20px', width: "400px", position: 'relative', height: "350px" }} src={(sai)} alt="" />
-                                {/* <img className="img-fluid" style={{ borderRadius: '20px', height: "17rem", width: "40rem", position: 'relative', top: '-70px' }} src={saikiran2} alt="" /> */}
-                                <div className="pt-4" style={{ position: 'relative', }}>
-                                    <h5 className="text-center fw-bold">G . Sai Kiran </h5>
-                                    <p className="fw-semibold text-center">Frontend Developer </p>
+                >
+                    <h1 style={{ fontSize: '35px', color: '#203764' }} className="fw-bold pb-lg-3 text-center">Developers Community </h1>
+                    <div className="p-lg-5 pb-0 container-lg">
+                        <div className="row p-4">
+                            <div className="col-md-4 mb-5">
+                                <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#6CF264', padding: '10px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
+                                    <img className="img-fluid" style={{ borderRadius: '20px', width: "400px", position: 'relative' }} src={(sai)} alt="" />
+                                    {/* <img className="img-fluid" style={{ borderRadius: '20px', height: "17rem", width: "40rem", position: 'relative', top: '-70px' }} src={saikiran2} alt="" /> */}
+                                    <div className="pt-4" style={{ position: 'relative', }}>
+                                        <h5 className="text-center fw-bold">G . Sai Kiran </h5>
+                                        <p className="fw-semibold text-center">Frontend Developer </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div className="col-md-4 mb-5">
-                            <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#6CF264', padding: '10px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
-                                <img className="img-fluid" style={{ borderRadius: '20px', width: "700px", position: 'relative' }} src={(bavi)} alt="" />
-                                {/* <img className="img-fluid" style={{ borderRadius: '20px', height: "17rem", width: "40rem", position: 'relative', top: '-70px' }} src={saikiran2} alt="" /> */}
-                                <div className="pt-4" style={{ position: 'relative', }}>
-                                    <h5 className="text-center fw-bold">K. Bhavana </h5>
-                                    <p className="fw-semibold text-center">UI/Ux Designer </p>
+                            <div className="col-md-4 mb-5">
+                                <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#6CF264', padding: '10px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
+                                    <img className="img-fluid" style={{ borderRadius: '20px', width: "700px", position: 'relative' }} src={(bavi)} alt="" />
+                                    {/* <img className="img-fluid" style={{ borderRadius: '20px', height: "17rem", width: "40rem", position: 'relative', top: '-70px' }} src={saikiran2} alt="" /> */}
+                                    <div className="pt-4" style={{ position: 'relative', }}>
+                                        <h5 className="text-center fw-bold">K. Bhavana </h5>
+                                        <p className="fw-semibold text-center">UI/Ux Designer </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div className="col-md-4 mb-5">
-                            <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#6CF264', padding: '10px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
-                                <img className="img-fluid" style={{ borderRadius: '20px', width: "700px", position: 'relative' }} src={(abba)} alt="" />
-                                {/* <img className="img-fluid" style={{ borderRadius: '20px', height: "17rem", width: "40rem", position: 'relative', top: '-70px' }} src={saikiran2} alt="" /> */}
-                                <div className="pt-4" style={{ position: 'relative', }}>
-                                    <h5 className="text-center fw-bold">C . Abbas </h5>
-                                    <p className="fw-semibold text-center">Frontend Developer </p>
+                            <div className="col-md-4 mb-5">
+                                <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#6CF264', padding: '10px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
+                                    <img className="img-fluid" style={{ borderRadius: '20px', width: "700px", position: 'relative' }} src={(abba)} alt="" />
+                                    {/* <img className="img-fluid" style={{ borderRadius: '20px', height: "17rem", width: "40rem", position: 'relative', top: '-70px' }} src={saikiran2} alt="" /> */}
+                                    <div className="pt-4" style={{ position: 'relative', }}>
+                                        <h5 className="text-center fw-bold">C . Abbas </h5>
+                                        <p className="fw-semibold text-center">Frontend Developer </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
+
                 </div>
-
             </div>
-            </div>
-            
-
-
 
 
             {/* videos  */}
-            <div className="" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2023/06/texture-background.jpg")` }}>
+            <div className="py-lg-4" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2023/06/texture-background.jpg")` }}>
 
-                <div className="container-md " style={{ paddingTop: '', paddingBottom: '0px', padding: '50px' }}>
-                    <div className="row ">
+                <div className="container-lg py-lg-5" style={{ paddingTop: '0px', paddingBottom: '0px', padding: '50px' }}>
+                    <div className="row d-flex align-items-center">
                         <div className="col-md-6 py-md-5 my-md-4">
                             <div className="d-flex gap-3 text-center flex-end flex-column align-items-center">
                                 <img className="img-fluid img-thumbnail shadow" width={200} height={100} src="https://cbit.edu.in/wp-content/uploads/2023/05/KSR_2562.jpg" alt="" />
@@ -363,11 +349,16 @@ export const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 position-relative" style={{ height: '20rem' }}>
-                            <div className="d-none d-md-block" style={{ position: 'relative', top: '-80px' }}>
-                                <img className="img-fluid" src={vision} alt="" />
+                        <div className="col-md-6 position-relative" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            <div className="d-none d-lg-block">
+                                <img
+                                    className="img-fluid"
+                                    style={{ objectFit: 'cover', height: '100%', width: 'auto' }} // Covers the vertical space and keeps the aspect ratio
+                                    src={vision}
+                                    alt=""
+                                />
                             </div>
-                            <div className="d-md-none mt-2" style={{}}>
+                            <div className="d-lg-none mt-2" style={{}}>
                                 <img className="img-fluid" src={vision} alt="" />
                             </div>
                         </div>
@@ -378,9 +369,8 @@ export const Home = () => {
 
             {/* logos  */}
             <div className="text-light p-4" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2023/05/element1.png")`, backgroundColor: '#0948A0', backgroundRepeat: 'repeat' }}>
-
-                <div className="container-md py-5 px-5">
-                    <div className="d-flex justify-content-between">
+                <div className="container-lg py-5 px-lg-5">
+                    <div className="d-flex flex-wrap justify-content-between">
 
                         <div className="d-flex flex-column gap-2  justify-content-center align-items-center text-center">
                             <img width={130} className="img-circle img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/06/ugc.png" alt="" />
@@ -435,17 +425,17 @@ export const Home = () => {
                 style={{
                     backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2022/03/day-care-hero-blobs-background.svg")`,
                     backgroundRepeat: 'no-repeat',
-                    backgroundSize: '100%',
+                    backgroundSize: 'cover',
                     backgroundPosition: 'right',
                     // width: '100vw',  // full width of the viewport
-                    height: '89vh', // full height of the viewport
+                    // height: '89vh', // full height of the viewport
                 }}>
-                <div className="container-md " style={{ padding: "40px" }}>
+                <div className="container-lg" style={{ padding: "40px" }}>
                     <div className="row ms-md-5 ">
                         <div className="col-md-5 d-flex flex-end">
                             <img style={{ borderRadius: '25px', maxHeight: "70vh" }} className="img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/05/COURSES.png" alt="" />
                         </div>
-                        <div className="col-md-7 ps-md-5">
+                        <div className="col-md-7 ps-lg-5 pt-3">
                             <div className="d-flex flex-column gap-2">
                                 <h1 className="fw-bold" style={{ color: "#203764", fontSize: '50px' }} >Courses @CBIT</h1>
 
@@ -526,8 +516,8 @@ export const Home = () => {
             </div>
 
             {/* dipartments  */}
-            <div className="text-light p-4" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2023/06/bgp.jpg")`, backgroundRepeat: 'repeat' }}>
-                <div className="container-md p-5">
+            <div className="text-light p-lg-4" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2023/06/bgp.jpg")`, backgroundRepeat: 'repeat' }}>
+                <div className="container-lg p-lg-5">
                     <div className="row">
                         <div className="col-md-6">
                             <div className="d-flex flex-column gap-3">
@@ -546,7 +536,7 @@ export const Home = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 d-flex mb-3 align-items-center">
                             <div>
                                 <img className="img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/06/dept.jpg" alt="" />
                             </div>
@@ -560,7 +550,7 @@ export const Home = () => {
                 style={{
                     backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2022/03/day-care-hero-blobs-background.svg")`,
                     backgroundRepeat: 'no-repeat',
-                    backgroundSize: '60%',
+                    backgroundSize: 'cover',
                     backgroundPosition: 'right',
                     // width: '100vw',  // full width of the viewport
                     // height: '89vh', // full height of the viewport
@@ -626,10 +616,10 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-light p-4" style={{ background: "#E7E7E7" }}>
-                <div className="container-md w-100 p-5">
+            <div className="text-light p-lg-4" style={{ background: "#E7E7E7" }}>
+                <div className="container-lg w-100 py-3 p-lg-5">
                     <h1 style={{ color: "#203764", fontSize: "50px" }} className=" fw-bold text-center">Honours & Achievements</h1>
-                    <div className="d-flex flex-wrap p-5 pt-3">
+                    <div className="d-flex justify-content-center mx-auto flex-wrap p-lg-5 pt-3">
 
                         <div className="m-2">
                             <img style={{ width: "10rem", borderRadius: "15px" }} className="rounded img-fluid img-thumbnail" src="https://cbit.edu.in/wp-content/uploads/2023/06/15-300x300.jpg" alt="" />
@@ -678,16 +668,14 @@ export const Home = () => {
 
 
             {/* placements  */}
-            <div className="text-light p-4" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2022/03/day-care-blobs-1.svg")`, backgroundRepeat: 'repeat' }}>
-            </div>
 
-            <div className="container-md">
+            <div className="container-lg">
                 <h1 style={{ color: "#203764", fontSize: "50px" }} className="pt-5 fw-bold text-center">Honours & Achievements</h1>
-                <div className="row p-md-5 gap-5">
-                    <div className="col-md-5">
-                        <img style={{ borderRadius: "30px", maxWidth: "33rem" }} className="ms-auto img-fluid shadow" src="https://cbit.edu.in/wp-content/uploads/2023/06/placement.jpg" alt="" />
+                <div className="row p-lg-5 gap-5">
+                    <div className="col-lg-5">
+                        <img style={{ borderRadius: "30px", }} className="ms-auto img-fluid shadow" src="https://cbit.edu.in/wp-content/uploads/2023/06/placement.jpg" alt="" />
                     </div>
-                    <div className="col-md-5">
+                    <div className="col-lg-5">
                         <p style={{ textTransform: "uppercase", color: "#2093DA" }} className="fw-semibold">
                             We at CBIT, extend a Hearty Invitation to all our Recruiting Partners.
                         </p>
@@ -700,7 +688,7 @@ export const Home = () => {
                         <button style={{ background: "#0359BC" }} className="btn text-light hover-black py-2 btn-hover rounded-pill fw-semibold">Know More</button>
                     </div>
                 </div>
-                <div style={{ background: "white" }}>
+                <div style={{ background: "white" }} className="my-3">
                     <marquee behavior="smooth" direction="left">
                         <img style={{ maxWidth: "10rem" }} className="img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/05/1.png" alt="" />
                         <img style={{ maxWidth: "10rem" }} className="img-fluid" src="https://cbit.edu.in/wp-content/uploads/2023/05/2.png" alt="" />
@@ -712,11 +700,10 @@ export const Home = () => {
                 </div>
             </div>
 
-
             {/* footer  */}
-            <div className="text-light p-4" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2023/05/footer.png")`, backgroundRepeat: 'repeat' }}>
-                <div className="container-md">
-                    <div className="row gap-4 p-5 text-dark">
+            <div className="text-light p-lg-4" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2023/05/footer.png")`, backgroundRepeat: 'repeat' }}>
+                <div className="container-lg">
+                    <div className="row p-5 text-dark">
                         <div className="col-md-2 col-sm-6 col-12">
                             <div className="d-flex align-items-center text-dark flex-column">
                                 <img className="img-fluid" style={{ width: "15rem" }} src="https://cbit.edu.in/wp-content/uploads/2023/05/cbit.png" alt="" />
