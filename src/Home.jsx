@@ -39,21 +39,44 @@ export const Home = () => {
                 <Navbar />
                 {/* imge */}
 
-                <div style={{ height: "42rem", zIndex: -1 }} className="w-100 overflow-hidden position-absolute overflow-hidden position-relative mt-2">
+                <div
+                    style={{ height: "42rem", zIndex: -1 }}
+                    className="w-100 overflow-hidden position-absolute overflow-hidden position-relative mt-2"
+                >
+                    {/* Blue tint overlay */}
+                    <div
+                        style={{
+                            backgroundColor: 'rgba(0, 0, 255, 0.2)', // Blue tint with 50% transparency
+                            width: '100%',
+                            height: '100%',
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            zIndex: 0, // Place the tint behind the text but above the image
+                        }}
+                    ></div>
+
                     <div style={{ zIndex: -1 }}>
-                        <img src={url} style={{ objectFit: 'cover', width: '100%', height: '45rem', zIndex: '-1' }} className=""></img>
+                        <img
+                            src={url}
+                            style={{ objectFit: 'cover', width: '100%', height: '45rem', zIndex: '-1' }}
+                            className=""
+                        />
                     </div>
-                    <div className="position-absolute top-50 text-light text-center w-100">
+
+                    {/* Text content */}
+                    <div className="position-absolute top-50 text-light text-center w-100" style={{ zIndex: 1 }}>
                         <h1>Your Future Secure With Us</h1>
                         <h1 style={{ fontSize: '50px' }}>Chaitanya Bharathi Institute of Technology</h1>
                     </div>
                 </div>
+
                 <div className="" style={{ height: "42rem" }}></div>
             </div>
 
             {/* Marquee tag  */}
-            <div className="py-2 px-5" style={{ backgroundColor: '#F3F5F5' }}>
-                <div style={{ fontSize: '14px' }} className="container px-5 d-flex align-items-center">
+            <div className="py-2 px-lg-5" style={{ backgroundColor: '#F3F5F5' }}>
+                <div style={{ fontSize: '14px' }} className="container px-lg-5 d-flex align-items-center">
                     <button style={{ backgroundColor: '#1E73BE', color: 'white', border: 'none', width: 'auto', textWrap: 'nowrap', fontSize: '14px' }}>Latest Updates</button>
                     <marquee behavior="" direction="" >
                         <div className="d-flex gap-5">
