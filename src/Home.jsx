@@ -262,6 +262,96 @@ export const Home = () => {
                 </div>
             </div>
 
+            {/* WELCOME SECTION 2 */}
+            {/* <div className="background-my-section">
+                <div
+                    className="pt-5"
+                    style={{
+                        backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2022/03/day-care-hero-blobs-background.svg")`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'right',
+                        // width: '100vw',  // full width of the viewport
+                        // height: '85vh', // full height of the viewport
+                    }}
+                >
+                    <div className="p-lg-5 pt-0 container-lg">
+                        <h1 style={{ fontSize: '50px', color: '#203764' }} className="fw-bold pb-5 text-center">Department of CSE</h1>
+                        <div className="row px-5 ">
+
+                            <div className="col-md-6 d-flex align-items-cente justify-content-center flex-column gap-3">
+                                <div>
+                                    <p className="fw-bold " style={{ textTransform: 'uppercase', letterSpacing: 2 }}></p>
+                                    <h1 style={{ fontSize: '50px', color: '#203764' }} className="fw-bold">Hod Of CSE </h1>
+                                </div>
+                                <p className="" style={{ fontSize: '20px' }}>Dr. Y. Dasaratha Rami Reddy, the Head of the Department in Computer Science and Engineering (CSE) at CBIT, has over 18 years of teaching experience. He holds a PhD in distributed systems from Bharath University, showcasing his deep expertise in the field. Dr. Reddy's extensive knowledge and dedication to education greatly benefit our CSE department, guiding both students and faculty toward academic excellence and innovation..</p>
+
+
+                            </div>
+
+                            <div className="col-md-6 ps-5 d-flex align-items-center">
+                                <div className="">
+                                    <img className="img-fluid " style={{ borderRadius: '20px', minHeight: '300px', maxHeight: "500px", }} src={(hod)} alt="" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div> */}
+
+            
+            {/* <div className="">
+                <div
+                    className="pt-5"
+                    style={{
+                        backgroundImage: `url(${saikiran2})`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover',
+                        // backgroundPosition: 'right',
+                        // width: '100vw',  // full width of the viewport
+                        // height: '85vh', // full height of the viewport
+                    }}
+                >
+                    <h1 style={{ fontSize: '35px', color: '#203764' }} className="fw-bold pb-lg-3 text-center">Developers Community </h1>
+                    <div className="p-lg-5 pb-0 container-lg">
+                        <div className="row p-4">
+                            <div className="col-md-4 mb-5">
+                                <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#6CF264', padding: '10px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
+                                    <img className="img-fluid" style={{ borderRadius: '20px', width: "400px", position: 'relative' }} src={(sai)} alt="" />
+                                    <div className="pt-4" style={{ position: 'relative', }}>
+                                        <h5 className="text-center fw-bold">G . Sai Kiran </h5>
+                                        <p className="fw-semibold text-center">Frontend Developer </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-4 mb-5">
+                                <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#6CF264', padding: '10px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
+                                    <img className="img-fluid" style={{ borderRadius: '20px', width: "700px", position: 'relative' }} src={(bavi)} alt="" />
+                                    <div className="pt-4" style={{ position: 'relative', }}>
+                                        <h5 className="text-center fw-bold">K. Bhavana </h5>
+                                        <p className="fw-semibold text-center">UI/Ux Designer </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-4 mb-5">
+                                <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#6CF264', padding: '10px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
+                                    <img className="img-fluid" style={{ borderRadius: '20px', width: "700px", position: 'relative' }} src={(abba)} alt="" />
+                                    <div className="pt-4" style={{ position: 'relative', }}>
+                                        <h5 className="text-center fw-bold">C . Abbas </h5>
+                                        <p className="fw-semibold text-center">Frontend Developer </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>  */}
+            
+
             {/* videos  */}
             <div className="py-lg-4" style={{ backgroundImage: `url("https://cbit.edu.in/wp-content/uploads/2023/06/texture-background.jpg")` }}>
 
