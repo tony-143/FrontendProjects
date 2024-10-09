@@ -7,6 +7,7 @@ import hod from '../public/images/hod.jpg'
 import sai from '../public/images/sai.jpg'
 import abba from '../public/images/abba.jpg'
 import bavi from '../public/images/bavi.jpg'
+import gs from '../public/images/gs.jpg'
 
 
 

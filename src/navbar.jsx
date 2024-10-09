@@ -19,7 +19,7 @@ function Navbar() {
 
     return (<>
 
-        <div className="d-lg-none d-flex">
+        <div className="d-lg-none d-flex flex-column">
             <div className="d-flex w-100 gap-5 text-right align-items-center justify-content-between">
                 <div>
                     <img className='img-fluid' src="https://cbit.edu.in/wp-content/uploads/2023/06/logo-cbit-new-1-600x102.jpg" alt="" />
